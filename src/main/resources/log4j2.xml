@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- used internally by log4j2 components. Setting status="debug" (or "trace") 
+	in the configuration will cause this internal logging to be output to the 
+	command line. -->
+<Configuration status="INFO">
+	<Appenders>
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss} %-5level %c{1}:%M(%L): %m%n" />
+		</Console>
+       <RollingFile name="console-log" fileName="logs/log4j2-console-log"
+                     filePattern="logs/log4j2-info-%d{yyyy-MM-dd}.log">
+            <PatternLayout>
+                <pattern>%d{HH:mm:ss} %-5level %c{1}:%M(%L): %m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>			
+       <RollingFile name="debug-log" fileName="logs/log4j2-debug-log"
+                     filePattern="logs/log4j2-debug-%d{yyyy-MM-dd}.log">
+            <PatternLayout>
+                <pattern>%d{yyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingFile>	
+<!-- 		<File name="debug-log" fileName="logs/log4j2-example.log"
+			immediateFlush="false" append="true">
+			<PatternLayout
+				pattern="%d{yyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n" />
+		</File> -->	
+	</Appenders>
+	<Loggers>
+		<Root level="debug">
+			<AppenderRef ref="console" level="info" />
+			<AppenderRef ref="console-log" level="info" />
+			<AppenderRef ref="debug-log" level="debug" />
+		</Root>
+	</Loggers>
+</Configuration>

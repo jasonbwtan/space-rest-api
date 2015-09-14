@@ -1,0 +1,2 @@
+23:07:20 INFO  MyResource:addUser(38): Received POST Reques with params:[George,5]
+23:08:59 INFO  MyResource:addUser(38): Received POST Reques with params:[George,5]

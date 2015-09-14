@@ -1,0 +1,1 @@
+web: java -cp target/classes:target/dependency/* com.jason.space_rest_api.heroku.Main

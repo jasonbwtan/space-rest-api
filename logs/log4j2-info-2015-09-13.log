@@ -1,0 +1,139 @@
+09:51:57 INFO  Version:logVersion(37): HHH000412: Hibernate Core {5.0.1.Final}
+09:51:57 INFO  Environment:<clinit>(213): HHH000206: hibernate.properties not found
+09:51:57 INFO  Environment:buildBytecodeProvider(317): HHH000021: Bytecode provider name : javassist
+09:53:25 INFO  Version:logVersion(37): HHH000412: Hibernate Core {5.0.1.Final}
+09:53:25 INFO  Environment:<clinit>(213): HHH000206: hibernate.properties not found
+09:53:25 INFO  Environment:buildBytecodeProvider(317): HHH000021: Bytecode provider name : javassist
+09:54:40 INFO  Version:logVersion(37): HHH000412: Hibernate Core {5.0.1.Final}
+09:54:40 INFO  Environment:<clinit>(213): HHH000206: hibernate.properties not found
+09:54:40 INFO  Environment:buildBytecodeProvider(317): HHH000021: Bytecode provider name : javassist
+09:54:40 INFO  Version:<clinit>(66): HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+09:54:40 WARN  DriverManagerConnectionProviderImpl:configure(76): HHH000402: Using Hibernate built-in connection pool (not for production use!)
+09:54:40 INFO  DriverManagerConnectionProviderImpl:buildCreator(149): HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/space]
+09:54:40 INFO  DriverManagerConnectionProviderImpl:buildCreator(155): HHH000046: Connection properties: {user=root, password=password}
+09:54:40 INFO  DriverManagerConnectionProviderImpl:buildCreator(163): HHH000006: Autocommit mode: false
+09:54:40 INFO  DriverManagerConnectionProviderImpl:configure(85): HHH000115: Hibernate connection pool size: 20 (min=1)
+09:54:40 INFO  Dialect:<init>(154): HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+11:56:22 INFO  Version:logVersion(37): HHH000412: Hibernate Core {5.0.1.Final}
+11:56:22 INFO  Environment:<clinit>(213): HHH000206: hibernate.properties not found
+11:56:22 INFO  Environment:buildBytecodeProvider(317): HHH000021: Bytecode provider name : javassist
+11:56:22 INFO  Version:<clinit>(66): HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+11:56:22 WARN  DriverManagerConnectionProviderImpl:configure(76): HHH000402: Using Hibernate built-in connection pool (not for production use!)
+11:56:22 INFO  DriverManagerConnectionProviderImpl:buildCreator(149): HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/test]
+11:56:22 INFO  DriverManagerConnectionProviderImpl:buildCreator(155): HHH000046: Connection properties: {user=root, password=password}
+11:56:22 INFO  DriverManagerConnectionProviderImpl:buildCreator(163): HHH000006: Autocommit mode: false
+11:56:22 INFO  DriverManagerConnectionProviderImpl:configure(85): HHH000115: Hibernate connection pool size: 20 (min=1)
+11:56:23 INFO  Dialect:<init>(154): HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+11:56:23 INFO  SchemaUpdate:execute(101): HHH000228: Running hbm2ddl schema update
+11:56:23 WARN  DriverManagerConnectionProviderImpl:configure(76): HHH000402: Using Hibernate built-in connection pool (not for production use!)
+11:56:23 INFO  DriverManagerConnectionProviderImpl:buildCreator(149): HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/test]
+11:56:23 INFO  DriverManagerConnectionProviderImpl:buildCreator(155): HHH000046: Connection properties: {user=root, password=password}
+11:56:23 INFO  DriverManagerConnectionProviderImpl:buildCreator(163): HHH000006: Autocommit mode: false
+11:56:23 INFO  DriverManagerConnectionProviderImpl:configure(85): HHH000115: Hibernate connection pool size: 20 (min=1)
+11:56:23 INFO  Dialect:<init>(154): HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+11:56:23 INFO  SchemaUpdate:execute(101): HHH000228: Running hbm2ddl schema update
+12:01:03 INFO  Version:logVersion(37): HHH000412: Hibernate Core {5.0.1.Final}
+12:01:03 INFO  Environment:<clinit>(213): HHH000206: hibernate.properties not found
+12:01:03 INFO  Environment:buildBytecodeProvider(317): HHH000021: Bytecode provider name : javassist
+12:01:03 INFO  Version:<clinit>(66): HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+12:01:03 WARN  DriverManagerConnectionProviderImpl:configure(76): HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:01:03 INFO  DriverManagerConnectionProviderImpl:buildCreator(149): HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/test]
+12:01:03 INFO  DriverManagerConnectionProviderImpl:buildCreator(155): HHH000046: Connection properties: {user=root, password=password}
+12:01:03 INFO  DriverManagerConnectionProviderImpl:buildCreator(163): HHH000006: Autocommit mode: false
+12:01:03 INFO  DriverManagerConnectionProviderImpl:configure(85): HHH000115: Hibernate connection pool size: 20 (min=1)
+12:01:03 INFO  Dialect:<init>(154): HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+12:01:04 INFO  SchemaUpdate:execute(101): HHH000228: Running hbm2ddl schema update
+12:01:04 WARN  DriverManagerConnectionProviderImpl:configure(76): HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:01:04 INFO  DriverManagerConnectionProviderImpl:buildCreator(149): HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/test]
+12:01:04 INFO  DriverManagerConnectionProviderImpl:buildCreator(155): HHH000046: Connection properties: {user=root, password=password}
+12:01:04 INFO  DriverManagerConnectionProviderImpl:buildCreator(163): HHH000006: Autocommit mode: false
+12:01:04 INFO  DriverManagerConnectionProviderImpl:configure(85): HHH000115: Hibernate connection pool size: 20 (min=1)
+12:01:04 INFO  Dialect:<init>(154): HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+12:01:04 INFO  SchemaUpdate:execute(101): HHH000228: Running hbm2ddl schema update
+12:01:54 INFO  Version:logVersion(37): HHH000412: Hibernate Core {5.0.1.Final}
+12:01:54 INFO  Environment:<clinit>(213): HHH000206: hibernate.properties not found
+12:01:54 INFO  Environment:buildBytecodeProvider(317): HHH000021: Bytecode provider name : javassist
+12:01:55 INFO  Version:<clinit>(66): HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+12:01:55 WARN  DriverManagerConnectionProviderImpl:configure(76): HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:01:55 INFO  DriverManagerConnectionProviderImpl:buildCreator(149): HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/test]
+12:01:55 INFO  DriverManagerConnectionProviderImpl:buildCreator(155): HHH000046: Connection properties: {user=root, password=password}
+12:01:55 INFO  DriverManagerConnectionProviderImpl:buildCreator(163): HHH000006: Autocommit mode: false
+12:01:55 INFO  DriverManagerConnectionProviderImpl:configure(85): HHH000115: Hibernate connection pool size: 20 (min=1)
+12:01:55 INFO  Dialect:<init>(154): HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+12:01:55 INFO  SchemaUpdate:execute(101): HHH000228: Running hbm2ddl schema update
+12:01:56 WARN  DriverManagerConnectionProviderImpl:configure(76): HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:01:56 INFO  DriverManagerConnectionProviderImpl:buildCreator(149): HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/test]
+12:01:56 INFO  DriverManagerConnectionProviderImpl:buildCreator(155): HHH000046: Connection properties: {user=root, password=password}
+12:01:56 INFO  DriverManagerConnectionProviderImpl:buildCreator(163): HHH000006: Autocommit mode: false
+12:01:56 INFO  DriverManagerConnectionProviderImpl:configure(85): HHH000115: Hibernate connection pool size: 20 (min=1)
+12:01:56 INFO  Dialect:<init>(154): HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+12:01:56 INFO  SchemaUpdate:execute(101): HHH000228: Running hbm2ddl schema update
+12:08:43 INFO  Version:logVersion(37): HHH000412: Hibernate Core {5.0.1.Final}
+12:08:43 INFO  Environment:<clinit>(213): HHH000206: hibernate.properties not found
+12:08:43 INFO  Environment:buildBytecodeProvider(317): HHH000021: Bytecode provider name : javassist
+12:09:03 INFO  Version:logVersion(37): HHH000412: Hibernate Core {5.0.1.Final}
+12:09:03 INFO  Environment:<clinit>(213): HHH000206: hibernate.properties not found
+12:09:03 INFO  Environment:buildBytecodeProvider(317): HHH000021: Bytecode provider name : javassist
+12:09:04 INFO  Version:<clinit>(66): HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+12:09:04 WARN  DriverManagerConnectionProviderImpl:configure(76): HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:09:04 INFO  DriverManagerConnectionProviderImpl:buildCreator(149): HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/space]
+12:09:04 INFO  DriverManagerConnectionProviderImpl:buildCreator(155): HHH000046: Connection properties: {user=root, password=password}
+12:09:04 INFO  DriverManagerConnectionProviderImpl:buildCreator(163): HHH000006: Autocommit mode: false
+12:09:04 INFO  DriverManagerConnectionProviderImpl:configure(85): HHH000115: Hibernate connection pool size: 20 (min=1)
+12:09:04 INFO  Dialect:<init>(154): HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+12:09:04 INFO  SchemaUpdate:execute(101): HHH000228: Running hbm2ddl schema update
+12:09:04 WARN  DriverManagerConnectionProviderImpl:configure(76): HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:09:04 INFO  DriverManagerConnectionProviderImpl:buildCreator(149): HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/space]
+12:09:04 INFO  DriverManagerConnectionProviderImpl:buildCreator(155): HHH000046: Connection properties: {user=root, password=password}
+12:09:04 INFO  DriverManagerConnectionProviderImpl:buildCreator(163): HHH000006: Autocommit mode: false
+12:09:04 INFO  DriverManagerConnectionProviderImpl:configure(85): HHH000115: Hibernate connection pool size: 20 (min=1)
+12:09:04 INFO  Dialect:<init>(154): HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+12:09:05 INFO  SchemaUpdate:execute(101): HHH000228: Running hbm2ddl schema update
+12:17:44 INFO  Version:logVersion(37): HHH000412: Hibernate Core {5.0.1.Final}
+12:17:44 INFO  Environment:<clinit>(213): HHH000206: hibernate.properties not found
+12:17:44 INFO  Environment:buildBytecodeProvider(317): HHH000021: Bytecode provider name : javassist
+12:17:44 INFO  Version:<clinit>(66): HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+12:17:44 WARN  DriverManagerConnectionProviderImpl:configure(76): HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:17:44 INFO  DriverManagerConnectionProviderImpl:buildCreator(149): HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/space]
+12:17:44 INFO  DriverManagerConnectionProviderImpl:buildCreator(155): HHH000046: Connection properties: {user=root, password=password}
+12:17:44 INFO  DriverManagerConnectionProviderImpl:buildCreator(163): HHH000006: Autocommit mode: false
+12:17:44 INFO  DriverManagerConnectionProviderImpl:configure(85): HHH000115: Hibernate connection pool size: 20 (min=1)
+12:17:44 INFO  Dialect:<init>(154): HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+12:17:45 INFO  SchemaUpdate:execute(101): HHH000228: Running hbm2ddl schema update
+12:17:57 INFO  Version:logVersion(37): HHH000412: Hibernate Core {5.0.1.Final}
+12:17:57 INFO  Environment:<clinit>(213): HHH000206: hibernate.properties not found
+12:17:57 INFO  Environment:buildBytecodeProvider(317): HHH000021: Bytecode provider name : javassist
+12:17:57 INFO  Version:<clinit>(66): HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+12:17:57 WARN  DriverManagerConnectionProviderImpl:configure(76): HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:17:57 INFO  DriverManagerConnectionProviderImpl:buildCreator(149): HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/space]
+12:17:57 INFO  DriverManagerConnectionProviderImpl:buildCreator(155): HHH000046: Connection properties: {user=root, password=password}
+12:17:57 INFO  DriverManagerConnectionProviderImpl:buildCreator(163): HHH000006: Autocommit mode: false
+12:17:57 INFO  DriverManagerConnectionProviderImpl:configure(85): HHH000115: Hibernate connection pool size: 20 (min=1)
+12:17:58 INFO  Dialect:<init>(154): HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+12:17:58 INFO  SchemaUpdate:execute(101): HHH000228: Running hbm2ddl schema update
+12:19:47 INFO  Version:logVersion(37): HHH000412: Hibernate Core {5.0.1.Final}
+12:19:47 INFO  Environment:<clinit>(213): HHH000206: hibernate.properties not found
+12:19:47 INFO  Environment:buildBytecodeProvider(317): HHH000021: Bytecode provider name : javassist
+12:19:48 INFO  Version:<clinit>(66): HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+12:19:48 WARN  DriverManagerConnectionProviderImpl:configure(76): HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:19:48 INFO  DriverManagerConnectionProviderImpl:buildCreator(149): HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/space]
+12:19:48 INFO  DriverManagerConnectionProviderImpl:buildCreator(155): HHH000046: Connection properties: {user=root, password=password}
+12:19:48 INFO  DriverManagerConnectionProviderImpl:buildCreator(163): HHH000006: Autocommit mode: false
+12:19:48 INFO  DriverManagerConnectionProviderImpl:configure(85): HHH000115: Hibernate connection pool size: 20 (min=1)
+12:19:48 INFO  Dialect:<init>(154): HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+12:19:48 INFO  LobCreatorBuilderImpl:useContextualLobCreation(98): HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+12:19:48 INFO  SchemaUpdate:execute(101): HHH000228: Running hbm2ddl schema update
+12:24:03 INFO  Version:logVersion(37): HHH000412: Hibernate Core {5.0.1.Final}
+12:24:03 INFO  Environment:<clinit>(213): HHH000206: hibernate.properties not found
+12:24:03 INFO  Environment:buildBytecodeProvider(317): HHH000021: Bytecode provider name : javassist
+12:24:03 INFO  Version:<clinit>(66): HCANN000001: Hibernate Commons Annotations {5.0.0.Final}
+12:24:03 WARN  DriverManagerConnectionProviderImpl:configure(76): HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:24:03 INFO  DriverManagerConnectionProviderImpl:buildCreator(149): HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/space]
+12:24:03 INFO  DriverManagerConnectionProviderImpl:buildCreator(155): HHH000046: Connection properties: {user=root, password=password}
+12:24:03 INFO  DriverManagerConnectionProviderImpl:buildCreator(163): HHH000006: Autocommit mode: false
+12:24:03 INFO  DriverManagerConnectionProviderImpl:configure(85): HHH000115: Hibernate connection pool size: 20 (min=1)
+12:24:03 INFO  Dialect:<init>(154): HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+12:24:03 INFO  LobCreatorBuilderImpl:useContextualLobCreation(98): HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+12:24:04 INFO  SchemaUpdate:execute(101): HHH000228: Running hbm2ddl schema update
+23:53:09 INFO  MyResource:addUser(45): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+23:53:16 INFO  MyResource:addUser(45): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:002,numberOfPeople:12,catering:1,overtime:1
