@@ -11,6 +11,8 @@ import org.eclipse.jetty.util.security.Constraint;
 import org.eclipse.jetty.util.security.Credential;
 import org.eclipse.jetty.webapp.WebAppContext;
 
+import com.jason.space_rest_api.BookingReporter;
+
 /**
  * This class launches the web application in an embedded Jetty container. This is the entry point to your application. The Java
  * command that is used for launching should fire this main method.
@@ -39,8 +41,8 @@ public class Main {
         final String webappDirLocation = "src/main/webapp/";
         root.setDescriptor(webappDirLocation + "/WEB-INF/web.xml");
         root.setResourceBase(webappDirLocation);
-        root.setSecurityHandler(basicAuth("scott", "tiger", "space-marylebone"));
-        root.addServlet(new ServletHolder(new HelloWorld()),"/foobar");
+        root.setSecurityHandler(basicAuth("admin", "admin", "space-marylebone"));
+        root.addServlet(new ServletHolder(new BookingReporter()),"/getreport");
 
         server.setHandler(root);
 
@@ -60,7 +62,7 @@ public class Main {
          
         ConstraintMapping cm = new ConstraintMapping();
         cm.setConstraint(constraint);
-        cm.setPathSpec("/myresource");
+        cm.setPathSpec("/getreport");
         
         ConstraintSecurityHandler csh = new ConstraintSecurityHandler();
         csh.setAuthenticator(new BasicAuthenticator());

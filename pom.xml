@@ -60,7 +60,7 @@
 			<version>2.3</version>
 		</dependency>
 
-		<!-- Database dependencies (Note hibernate 5 doesn't seem to work)-->
+		<!-- Database dependencies (Note hibernate 5 doesn't seem to work) -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
@@ -77,6 +77,18 @@
 		<!-- Hibernate EHCache API -->
 		<!-- <dependency> <groupId>org.hibernate</groupId> <artifactId>hibernate-ehcache</artifactId> 
 			<version>4.3.5.Final</version> </dependency> -->
+		<!-- Poi Report excel generation -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.13-beta1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.13-beta1</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -108,7 +120,7 @@
 					</execution>
 				</executions>
 			</plugin>
- 			<plugin>
+			<plugin>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
 				<version>${jetty.version}</version>

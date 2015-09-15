@@ -1,11 +1,8 @@
 package com.jason.space_rest_api;
 
-import java.io.File;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import javax.persistence.Column;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -13,11 +10,9 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import javax.ws.rs.core.Response.ResponseBuilder;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.hibernate.annotations.Type;
 
 import com.jason.space_rest_api.hibernate.model.Customer;
 import com.javacodegeeks.snippets.enterprise.hibernate.service.CustomerService;
@@ -76,19 +71,29 @@ public class MyResource {
 								catering, overtime)).build();
 	}
 
-	@GET
-	@Path("/getreport")
-	@Produces("text/plain")
-	public Response getReport() {
-		Date date = new Date();
-		SimpleDateFormat sdf = new SimpleDateFormat("YYYY_MM_dd");
-		String dateString = sdf.format(date);
-		File file = new File("C:\\tmp\\rest-demo\\foo.txt");
-		ResponseBuilder response = Response.ok((Object) file);
-		response.header("Content-Disposition",
-				"attachment; filename=\"space_report_"+dateString+".txt\"");
-		return response.build();
-
-	}
+//	@GET
+//	@Path("/getreport")
+//	@Produces("text/plain")
+//	public Response getReport() throws IOException {
+//		Date date = new Date();
+//		SimpleDateFormat sdf = new SimpleDateFormat("YYYY_MM_dd");
+//		String dateString = sdf.format(date);
+////		File file = new File("foo.txt");
+////		FileOutputStream out = new FileOutputStream(file);
+////		byte[] data = {1, 2, 3, 4, 5};
+////		out.write(data);
+////		out.close();
+//		PrintWriter writer = new PrintWriter("foo.txt", "UTF-8");
+//		writer.println("The first line");
+//		writer.println("The second line");
+//		writer.close();
+//		File file = new File("foo.txt");
+//		
+//		ResponseBuilder response = Response.ok((Object) file);
+//		response.header("Content-Disposition",
+//				"attachment; filename=\"space_report_"+dateString+".txt\"");
+//		return response.build();
+//
+//	}
 
 }
