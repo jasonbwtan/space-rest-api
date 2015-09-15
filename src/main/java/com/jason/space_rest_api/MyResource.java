@@ -40,7 +40,7 @@ public class MyResource {
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String getIt() {
-		return "Hello, Heroku!";
+		return "Hello, Jersey-Rest-Heroku (space)!";
 	}
 
 	@POST

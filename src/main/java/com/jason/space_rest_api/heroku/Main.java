@@ -1,6 +1,14 @@
 package com.jason.space_rest_api.heroku;
 
+import org.eclipse.jetty.security.ConstraintMapping;
+import org.eclipse.jetty.security.ConstraintSecurityHandler;
+import org.eclipse.jetty.security.HashLoginService;
+import org.eclipse.jetty.security.SecurityHandler;
+import org.eclipse.jetty.security.authentication.BasicAuthenticator;
 import org.eclipse.jetty.server.Server;
+import org.eclipse.jetty.servlet.ServletHolder;
+import org.eclipse.jetty.util.security.Constraint;
+import org.eclipse.jetty.util.security.Credential;
 import org.eclipse.jetty.webapp.WebAppContext;
 
 /**
@@ -14,7 +22,7 @@ public class Main {
         // Look for that variable and default to 8080 if it isn't there.
         String webPort = System.getenv("PORT");
         if (webPort == null || webPort.isEmpty()) {
-            webPort = "8080";
+            webPort = "8888";
         }
 
         final Server server = new Server(Integer.valueOf(webPort));
@@ -31,10 +39,37 @@ public class Main {
         final String webappDirLocation = "src/main/webapp/";
         root.setDescriptor(webappDirLocation + "/WEB-INF/web.xml");
         root.setResourceBase(webappDirLocation);
+        root.setSecurityHandler(basicAuth("scott", "tiger", "space-marylebone"));
+        root.addServlet(new ServletHolder(new HelloWorld()),"/foobar");
 
         server.setHandler(root);
 
         server.start();
         server.join();
     }
+    private static final SecurityHandler basicAuth(String username, String password, String realm) {
+
+    	HashLoginService l = new HashLoginService();
+        l.putUser(username, Credential.getCredential(password), new String[] {"user"});
+        l.setName(realm);
+        
+        Constraint constraint = new Constraint();
+        constraint.setName(Constraint.__BASIC_AUTH);
+        constraint.setRoles(new String[]{"user"});
+        constraint.setAuthenticate(true);
+         
+        ConstraintMapping cm = new ConstraintMapping();
+        cm.setConstraint(constraint);
+        cm.setPathSpec("/myresource");
+        
+        ConstraintSecurityHandler csh = new ConstraintSecurityHandler();
+        csh.setAuthenticator(new BasicAuthenticator());
+        csh.setRealmName("myrealm");
+        csh.addConstraintMapping(cm);
+        csh.setLoginService(l);
+        
+        return csh;
+    	
+    }
+
 }
