@@ -55,7 +55,7 @@ public class MyResource {
 				e.printStackTrace();
 			}
 		}
-		return "hibernate.connection.url:"+"jdbc:postgresql://"+dbUri.getHost()+":"+dbUri.getPort()+":"+dbUri.getPath();
+		return "hibernate.connection.url:"+"jdbc:postgresql://"+dbUri.getHost()+":"+dbUri.getPort()+dbUri.getPath();
 
 	}
 	@POST
