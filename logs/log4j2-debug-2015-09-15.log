@@ -1,0 +1,2 @@
+2015-09-15 20:35:04 INFO  com.jason.space_rest_api.MyResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+2015-09-15 20:35:04 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015

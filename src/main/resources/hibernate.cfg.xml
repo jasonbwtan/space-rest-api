@@ -4,14 +4,22 @@
 
 <hibernate-configuration>
 	<session-factory>
-		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+<!-- 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 		<property name="hibernate.connection.url">jdbc:mysql://localhost/space</property>
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password">password</property>
-		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.hbm2ddl.auto">update</property> -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">password</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/space</property>
+
+        <property name="hbm2ddl.auto">create</property>	
 		<property name="show_sql">false</property>
 		<property name="hibernate.current_session_context_class">thread</property>
+		<!--         <property name="connection_pool_size">1</property> -->
 		<mapping class="com.jason.space_rest_api.hibernate.model.Customer" />
 	</session-factory>
 </hibernate-configuration>

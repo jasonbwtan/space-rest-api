@@ -1,0 +1,1 @@
+20:35:04 INFO  MyResource:addUser(55): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
