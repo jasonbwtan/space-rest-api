@@ -1,5 +1,7 @@
 package com.jason.space_rest_api;
 
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.text.ParseException;
 import java.util.Date;
 
@@ -38,6 +40,24 @@ public class MyResource {
 		return "Hello, Jersey-Rest-Heroku (space)!";
 	}
 
+	
+	@GET
+	@Path("/db")
+	public String getDbInfo(){
+		String DATABASE_URL = System.getenv("DATABASE_URL");
+		URI dbUri = null;
+
+		if(DATABASE_URL != null && !DATABASE_URL.equals("")){
+			try {
+				dbUri = new URI(DATABASE_URL);
+			} catch (URISyntaxException e) {
+				logger.info("Could not read DATABASE_URL heroku environment variable");
+				e.printStackTrace();
+			}
+		}
+		return "hibernate.connection.url:"+"jdbc:postgresql://"+dbUri.getHost()+":"+dbUri.getPort()+":"+dbUri.getPath();
+
+	}
 	@POST
 	@Path("/add")
 	public Response addUser(@FormParam("name") String name,
@@ -71,6 +91,7 @@ public class MyResource {
 								catering, overtime)).build();
 	}
 
+	
 //	@GET
 //	@Path("/getreport")
 //	@Produces("text/plain")
