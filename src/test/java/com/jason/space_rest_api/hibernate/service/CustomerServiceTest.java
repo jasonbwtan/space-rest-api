@@ -36,8 +36,8 @@ public class CustomerServiceTest {
 
 	@Test
 	public void testPersist() {
-		Customer c1 = new Customer("JT1", "com.JT", new Date(
-				System.currentTimeMillis()), 5, 1, 1);
+		Customer c1 = new Customer("JT1", "jason@testmail.com","07123456789", "com.JT", new Date(
+				System.currentTimeMillis()), 5, 1, 1,"it was great");
 		customerService.persist(c1);
 		Customer cResult = customerService.findAll().get(0);
 		assertTrue(c1.equals(cResult));
@@ -45,8 +45,8 @@ public class CustomerServiceTest {
 
 	@Test
 	public void testFindById() {
-		Customer c1 = new Customer("JT1", "com.JT", new Date(
-				System.currentTimeMillis()), 5, 1, 1);
+		Customer c1 = new Customer("JT1", "jason@testmail.com","07123456789", "com.JT", new Date(
+				System.currentTimeMillis()), 5, 1, 1,"it was great");
 		customerService.persist(c1);
 		Customer cResult = customerService.findById(c1.getId());
 		assertTrue(c1.equals(cResult));
@@ -54,8 +54,8 @@ public class CustomerServiceTest {
 
 	@Test
 	public void testDelete() {
-		Customer c1 = new Customer("JT1", "com.JT", new Date(
-				System.currentTimeMillis()), 5, 1, 1);
+		Customer c1 = new Customer("JT1", "jason@testmail.com","07123456789", "com.JT", new Date(
+				System.currentTimeMillis()), 5, 1, 1,"it was great");
 		customerService.persist(c1);
 		customerService.delete(c1.getId());
 		assertTrue(customerService.findAll().isEmpty());

@@ -16,7 +16,15 @@ public class Utils {
 		return sdf.parse(date);
 	}
 	
+	public static String validateMsidsn(String msidsn){
+		return "";
+	}
+	
 	public static void main(String[] args) throws ParseException {
 		System.out.println(Utils.formatDate("2015/05/01 17:00"));
+	}
+	
+	public static String validateAdditionalComments(String additionalComments){
+		 return additionalComments.substring(0, Math.min(additionalComments.length(), 255));
 	}
 }

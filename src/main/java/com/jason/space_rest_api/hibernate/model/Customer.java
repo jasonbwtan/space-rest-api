@@ -19,27 +19,31 @@ public class Customer extends AbstractTimestampEntity implements Serializable {
 	public static final int TRUE = 1;
 	public static final int FALSE = 0;
 
-	public Customer(String name, String organisation, Date date,
-			int numberOfPeople, int catering, int overtime) {
+	public Customer(String name, String email, String phone, String organisation, Date date,
+			int numberOfPeople, int catering, int overtime, String additionalComments) {
 		super();
 		this.name = name;
+		this.email = email;
+		this.phone = phone;
 		this.organisation = organisation;
 		this.date = date;
 		this.numberOfPeople = numberOfPeople;
 		this.catering = catering;
 		this.overtime = overtime;
+		this.additionalComments = additionalComments;
 	}
 
-	public Customer(long id, String name, String organisation, Date date,
-			int numberOfPeople, int catering, int overtime) {
-		super();
+	public Customer(long id, String name, String email, String phone, String organisation,
+			Date date, int numberOfPeople, int catering, int overtime,
+			String additionalComments) {
+		this(name, email, phone, organisation, date, numberOfPeople, catering, overtime, additionalComments);
 		this.id = id;
-		this.name = name;
-		this.organisation = organisation;
-		this.date = date;
-		this.numberOfPeople = numberOfPeople;
-		this.catering = catering;
-		this.overtime = overtime;
+//		this.name = name;
+//		this.organisation = organisation;
+//		this.date = date;
+//		this.numberOfPeople = numberOfPeople;
+//		this.catering = catering;
+//		this.overtime = overtime;
 	}
 
 	public Customer() {
@@ -53,6 +57,12 @@ public class Customer extends AbstractTimestampEntity implements Serializable {
 
 	@Column(name = "name")
 	private String name;
+
+	@Column(name = "phone")
+	private String phone;
+
+	@Column(name = "email")
+	private String email;
 
 	@Column(name = "organisation")
 	private String organisation;
@@ -70,12 +80,23 @@ public class Customer extends AbstractTimestampEntity implements Serializable {
 	@Column(name = "overtime")
 	private int overtime;
 
+	@Column(name = "additionalComments")
+	private String additionalComments;
+
 	public long getId() {
 		return id;
 	}
 
 	public String getName() {
 		return name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public String getPhone() {
+		return phone;
 	}
 
 	public String getOrganisation() {
@@ -98,12 +119,24 @@ public class Customer extends AbstractTimestampEntity implements Serializable {
 		return overtime;
 	}
 
+	public String getAdditionalComments() {
+		return additionalComments;
+	}
+
 	public void setId(long id) {
 		this.id = id;
 	}
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
 	public void setOrganisation(String organisation) {
@@ -126,6 +159,10 @@ public class Customer extends AbstractTimestampEntity implements Serializable {
 		this.overtime = overtime;
 	}
 
+	public void setAdditionalComments(String additionalComments) {
+		this.additionalComments = additionalComments;
+	}
+
 	@Override
 	public String toString() {
 		return String
@@ -140,6 +177,8 @@ public class Customer extends AbstractTimestampEntity implements Serializable {
 			Customer customerArg = (Customer) o;
 			// this.id == customerArg.id &&
 			if (this.name.equals(customerArg.name)
+					&& this.email.equals(customerArg.email)
+					&& this.email.equals(customerArg.phone)
 					&& this.organisation.equals(customerArg.organisation)
 					&& this.date.equals(customerArg.date)
 					&& this.numberOfPeople == customerArg.numberOfPeople
@@ -151,10 +190,10 @@ public class Customer extends AbstractTimestampEntity implements Serializable {
 		return false;
 	}
 
-	public static void main(String[] args) {
-		Customer c = new Customer("JT", "com.JT", new Date(
-				System.currentTimeMillis()), 5, TRUE, TRUE);
-		System.out.println(c);
-		System.out.println(c.equals(c));
-	}
+//	public static void main(String[] args) {
+//		Customer c = new Customer("JT", "com.JT", new Date(
+//				System.currentTimeMillis()), 5, TRUE, TRUE);
+//		System.out.println(c);
+//		System.out.println(c.equals(c));
+//	}
 }

@@ -61,11 +61,14 @@ public class MyResource {
 	@POST
 	@Path("/add")
 	public Response addUser(@FormParam("name") String name,
+			@FormParam("email") String email,
+			@FormParam("phone") String phone,
 			@FormParam("organisation") String organisation,
 			@FormParam("date") String dateString,
 			@FormParam("numberOfPeople") int numberOfPeople,
 			@FormParam("catering") int catering,
-			@FormParam("overtime") int overtime) {
+			@FormParam("overtime") int overtime,
+			@FormParam("additionalComments") String additionalComments) {
 		try {
 			logger.info(String
 					.format("Received POST Request with params:[name:%s,organisation:%s,date:%s,numberOfPeople:%s,catering:%s,overtime:%s",
@@ -73,8 +76,7 @@ public class MyResource {
 							catering, overtime));
 			Date date = Utils.formatDate(dateString);
 
-			Customer customer = new Customer(name, organisation, date,
-					numberOfPeople, catering, overtime);
+			Customer customer = new Customer(name, email, phone, organisation, date, numberOfPeople, catering, overtime, additionalComments);
 			customerService.persist(customer);
 		} catch (ParseException e) {
 			return Response
