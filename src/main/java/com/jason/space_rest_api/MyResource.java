@@ -88,7 +88,7 @@ public class MyResource {
 		return Response
 				.status(200)
 				.entity(String
-						.format("Received POST Request with params:[name:%s,organisation:%s,date:%s,numberOfPeople:%s,catering:%s,overtime:%s",
+						.format("Successfully received and submitted POST Request with params:[name:%s,organisation:%s,date:%s,numberOfPeople:%s,catering:%s,overtime:%s",
 								name, organisation, dateString, numberOfPeople,
 								catering, overtime)).build();
 	}
