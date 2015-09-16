@@ -42,7 +42,7 @@ public class Main {
         root.setDescriptor(webappDirLocation + "/WEB-INF/web.xml");
         root.setResourceBase(webappDirLocation);
         root.setSecurityHandler(basicAuth("admin", "admin", "space-marylebone"));
-        root.addServlet(new ServletHolder(new BookingReporter()),"/getreport");
+        root.addServlet(new ServletHolder(new BookingReporter()),"/api/getreport");
 
         server.setHandler(root);
 
@@ -62,7 +62,7 @@ public class Main {
          
         ConstraintMapping cm = new ConstraintMapping();
         cm.setConstraint(constraint);
-        cm.setPathSpec("/getreport");
+        cm.setPathSpec("/api/getreport");
         
         ConstraintSecurityHandler csh = new ConstraintSecurityHandler();
         csh.setAuthenticator(new BasicAuthenticator());

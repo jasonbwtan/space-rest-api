@@ -22,7 +22,7 @@ import com.javacodegeeks.snippets.enterprise.hibernate.service.CustomerService;
 /**
  * Root resource (exposed at "myresource" path)
  */
-@Path("myresource")
+@Path("api")
 public class MyResource {
 	static final Logger logger = LogManager.getLogger();
 	static final CustomerService customerService = CustomerService
