@@ -54,7 +54,7 @@ public class CustomerDaoImpl implements CustomerDao<Customer, Long> {
 				logger.info("Could not read DATABASE_URL heroku environment variable");
 				e.printStackTrace();
 			}
-			configuration.setProperty("hibernate.connection.url", "jdbc:postgresql://"+dbUri.getHost()+":"+dbUri.getPort()+":"+dbUri.getPath());
+			configuration.setProperty("hibernate.connection.url", "jdbc:postgresql://"+dbUri.getHost()+":"+dbUri.getPort()+"/"+dbUri.getPath());
 			configuration.setProperty("hibernate.connection.username", dbUri.getUserInfo().split(":")[0]);
 			configuration.setProperty("hibernate.connection.password", dbUri.getUserInfo().split(":")[1]);
 
