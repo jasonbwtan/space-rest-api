@@ -25,7 +25,7 @@ public class BookingReporter extends HttpServlet {
 			throws ServletException, IOException {
 
 		String sheetName = "Sheet1";// name of sheet
-
+		System.out.println(req.getParameter("from"));
 		XSSFWorkbook wb = new XSSFWorkbook();
 		XSSFSheet sheet = wb.createSheet(sheetName);
 
@@ -51,10 +51,6 @@ public class BookingReporter extends HttpServlet {
 		// write this workbook to an Outputstream.
 		wb.write(response.getOutputStream()); // Write workbook to response.
 		wb.close();
-
-
-		
-
 
 	}
 

@@ -10,6 +10,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -40,7 +41,6 @@ public class MyResource {
 		return "Hello, Jersey-Rest-Heroku (space)!";
 	}
 
-	
 	@GET
 	@Path("/db")
 	public String getDbInfo(){
@@ -56,6 +56,14 @@ public class MyResource {
 			}
 		}
 		return "hibernate.connection.url:"+"jdbc:postgresql://"+dbUri.getHost()+":"+dbUri.getPort()+"/"+dbUri.getPath();
+
+	}	
+	@GET
+	@Path("/getreport")
+	public String getReport(@QueryParam("from") String from, @QueryParam("to") String to){
+		String params = from+to;
+		return "Authorized. /getreport is a protected method! Parameters:"+params;
+
 
 	}
 	@POST

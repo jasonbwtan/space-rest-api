@@ -45,7 +45,7 @@ public class Main {
         root.setDescriptor(webappDirLocation + "/WEB-INF/web.xml");
         root.setResourceBase(webappDirLocation);
         root.setSecurityHandler(basicAuth("admin", "admin", "space-marylebone"));
-        root.addServlet(new ServletHolder(new BookingReporter()),"/api/getreport");
+        //root.addServlet(new ServletHolder(new BookingReporter()),"/api/getreport");
 
         server.setHandler(root);
 
