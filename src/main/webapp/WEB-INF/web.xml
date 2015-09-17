@@ -2,7 +2,7 @@
 <web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	version="3.0">
-
+<!-- 
 	<servlet>
 		<servlet-name>Jersey Web Application</servlet-name>
 		<servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
@@ -15,14 +15,22 @@
 	<servlet-mapping>
 		<servlet-name>Jersey Web Application</servlet-name>
 		<url-pattern>/*</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
 
-<!-- 	<filter>
-		<filter-name>AuthenticationFilter</filter-name>
-		<filter-class>com.jason.space_rest_api.jersey.RestAuthenticationFilter</filter-class>
+	<filter>
+		<filter-name>Jersey Filter</filter-name>
+		<filter-class>org.glassfish.jersey.servlet.ServletContainer</filter-class>
+		<init-param>
+			<param-name>jersey.config.server.provider.packages</param-name>
+			<param-value>com.jason.space_rest_api</param-value>
+		</init-param>
+		<init-param>
+			<param-name>jersey.config.servlet.filter.staticContentRegex</param-name>
+			<param-value>/.*html</param-value>
+		</init-param>
 	</filter>
 	<filter-mapping>
-		<filter-name>AuthenticationFilter</filter-name>
-		<url-pattern>/myresource/getreport</url-pattern>
-	</filter-mapping> -->
+		<filter-name>Jersey Filter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 </web-app>
