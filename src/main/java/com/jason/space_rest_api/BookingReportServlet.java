@@ -1,5 +1,7 @@
 package com.jason.space_rest_api;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -14,7 +16,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class BookingReporter extends HttpServlet {
+public class BookingReportServlet extends HttpServlet {
 	/**
 	 * 
 	 */
@@ -23,22 +25,26 @@ public class BookingReporter extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse response)
 			throws ServletException, IOException {
-
-		String sheetName = "Sheet1";// name of sheet
+		
 		System.out.println(req.getParameter("from"));
-		XSSFWorkbook wb = new XSSFWorkbook();
-		XSSFSheet sheet = wb.createSheet(sheetName);
+		System.out.println(req.getParameter("to"));
 
-		// iterating r number of rows
-		for (int r = 0; r < 5; r++) {
-			XSSFRow row = sheet.createRow(r);
-
-			// iterating c number of columns
-			for (int c = 0; c < 5; c++) {
-				XSSFCell cell = row.createCell(c);
-
-				cell.setCellValue("Cell " + r + " " + c);
+	    File file = new File("src/main/resources/template.xlsx");
+	    FileInputStream inputStream = new FileInputStream(file);
+	    XSSFWorkbook wb = null;
+		try{
+			wb = new XSSFWorkbook(inputStream);
+			XSSFSheet sheet = wb.getSheetAt(0);
+			for (int i = 3; i < 5; i++) {
+				XSSFRow row = sheet.createRow(i);
+				// iterating j number of columns
+				for (int j = 0; j < 5; j++) {
+					XSSFCell cell = row.createCell(j);
+					cell.setCellValue("Cell" + j);
+				}
 			}
+		} catch (Exception e){
+			
 		}
 		//Headers must come before writing to the stream otherwise you'll set it to the default application/octet-stream
 		Date date = new Date();

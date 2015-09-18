@@ -1,0 +1,10 @@
+20:25:35 INFO  MyResource:addUser(50): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+20:26:38 INFO  MyResource:addUser(50): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+20:27:55 INFO  MyResource:addUser(50): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+20:28:03 INFO  MyResource:addUser(50): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+21:29:06 INFO  MyResource:addUser(50): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+21:29:07 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+21:30:01 INFO  MyResource:addUser(50): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+21:30:01 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+22:52:08 INFO  MyResource:addUser(73): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+22:52:08 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties

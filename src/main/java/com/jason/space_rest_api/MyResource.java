@@ -1,9 +1,15 @@
 package com.jason.space_rest_api;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
@@ -11,11 +17,17 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
+import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import javax.ws.rs.core.StreamingOutput;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import com.jason.space_rest_api.hibernate.model.Customer;
 import com.javacodegeeks.snippets.enterprise.hibernate.service.CustomerService;
@@ -43,11 +55,11 @@ public class MyResource {
 
 	@GET
 	@Path("/db")
-	public String getDbInfo(){
+	public String getDbInfo() {
 		String DATABASE_URL = System.getenv("DATABASE_URL");
 		URI dbUri = null;
 
-		if(DATABASE_URL != null && !DATABASE_URL.equals("")){
+		if (DATABASE_URL != null && !DATABASE_URL.equals("")) {
 			try {
 				dbUri = new URI(DATABASE_URL);
 			} catch (URISyntaxException e) {
@@ -55,22 +67,108 @@ public class MyResource {
 				e.printStackTrace();
 			}
 		}
-		return "hibernate.connection.url:"+"jdbc:postgresql://"+dbUri.getHost()+":"+dbUri.getPort()+"/"+dbUri.getPath();
-
-	}	
-	@GET
-	@Path("/getreport")
-	public String getReport(@QueryParam("from") String from, @QueryParam("to") String to){
-		String params = from+to;
-		return "Authorized. /getreport is a protected method! Parameters:"+params;
-
+		return "hibernate.connection.url:" + "jdbc:postgresql://"
+				+ dbUri.getHost() + ":" + dbUri.getPort() + "/"
+				+ dbUri.getPath();
 
 	}
+
+	// @GET
+	// @Path("/getreport")
+	// public String getReport(@QueryParam("from") String from,
+	// @QueryParam("to") String to){
+	// String params = from+to;
+	// return
+	// "Authorized. /getreport is a protected method! Parameters:"+params;
+	//
+	//
+	// }
+
+	@GET
+	@Path("/testexcel")
+	@Produces("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+	public Response exportExcel(@QueryParam("from") String from,
+			@QueryParam("to") String to) throws Exception {
+		String params = from + to;
+		System.out.println(params);
+		File file = new File("src/main/resources/template.xlsx");
+		FileInputStream inputStream = new FileInputStream(file);
+
+		XSSFWorkbook wb = new XSSFWorkbook(inputStream);
+		XSSFSheet sheet = wb.getSheetAt(0);
+		if (from != null && to != null) {
+
+		} else {
+			List<Customer> customers = customerService.findAll();
+			Customer e = new Customer("JT1", "jason@testmail.com","07123456789", "com.JT", new Date(
+					System.currentTimeMillis()), 5, 1, 1,"it was great");
+			customers.add(e);
+			for (int i = 0; i < customers.size(); i++) {
+				XSSFRow row = sheet.createRow(i + 3);
+				Customer customer = customers.get(i);
+				for (int j = 0; j < 9; j++) {
+					XSSFCell cell = row.createCell(j);
+					switch (j) {
+					case 0:
+						cell.setCellValue(customer.getName());
+						break;
+					case 1:
+						cell.setCellValue(customer.getEmail());
+						break;
+					case 2:
+						cell.setCellValue(customer.getPhone());
+						break;
+					case 3:
+						cell.setCellValue(customer.getOrganisation());
+						break;
+					case 4:
+						cell.setCellValue(customer.getDate());
+						break;
+					case 5:
+						cell.setCellValue(customer.getNumberOfPeople());
+						break;
+					case 6:
+						cell.setCellValue(customer.isCatering());
+						break;
+					case 7:
+						cell.setCellValue(customer.isOvertime());
+						break;
+					case 8:
+						cell.setCellValue(customer.getAdditionalComments());
+						break;						
+					default:
+						break;
+					}
+				}
+			}
+		}
+
+		StreamingOutput stream = new StreamingOutput() {
+			public void write(OutputStream output) throws IOException,
+					WebApplicationException {
+				try {
+					wb.write(output);
+					wb.close();
+				} catch (Exception e) {
+					throw new WebApplicationException(e);
+				}
+			}
+		};
+		Date date = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("YYYY_MM_dd");
+		String dateString = sdf.format(date);
+		return Response
+				.ok(stream)
+				.header("content-disposition",
+						"attachment; filename = space-bookings-export_"
+								+ dateString + ".xlsx").build();
+
+	}
+
 	@POST
 	@Path("/add")
 	public Response addUser(@FormParam("name") String name,
-			@FormParam("email") String email,
-			@FormParam("phone") String phone,
+			@FormParam("email") String email, @FormParam("phone") String phone,
 			@FormParam("organisation") String organisation,
 			@FormParam("date") String dateString,
 			@FormParam("numberOfPeople") int numberOfPeople,
@@ -84,7 +182,9 @@ public class MyResource {
 							catering, overtime));
 			Date date = Utils.formatDate(dateString);
 
-			Customer customer = new Customer(name, email, phone, organisation, date, numberOfPeople, catering, overtime, additionalComments);
+			Customer customer = new Customer(name, email, phone, organisation,
+					date, numberOfPeople, catering, overtime,
+					additionalComments);
 			customerService.persist(customer);
 		} catch (ParseException e) {
 			return Response
@@ -101,30 +201,29 @@ public class MyResource {
 								catering, overtime)).build();
 	}
 
-	
-//	@GET
-//	@Path("/getreport")
-//	@Produces("text/plain")
-//	public Response getReport() throws IOException {
-//		Date date = new Date();
-//		SimpleDateFormat sdf = new SimpleDateFormat("YYYY_MM_dd");
-//		String dateString = sdf.format(date);
-////		File file = new File("foo.txt");
-////		FileOutputStream out = new FileOutputStream(file);
-////		byte[] data = {1, 2, 3, 4, 5};
-////		out.write(data);
-////		out.close();
-//		PrintWriter writer = new PrintWriter("foo.txt", "UTF-8");
-//		writer.println("The first line");
-//		writer.println("The second line");
-//		writer.close();
-//		File file = new File("foo.txt");
-//		
-//		ResponseBuilder response = Response.ok((Object) file);
-//		response.header("Content-Disposition",
-//				"attachment; filename=\"space_report_"+dateString+".txt\"");
-//		return response.build();
-//
-//	}
+	// @GET
+	// @Path("/getreport")
+	// @Produces("text/plain")
+	// public Response getReport() throws IOException {
+	// Date date = new Date();
+	// SimpleDateFormat sdf = new SimpleDateFormat("YYYY_MM_dd");
+	// String dateString = sdf.format(date);
+	// // File file = new File("foo.txt");
+	// // FileOutputStream out = new FileOutputStream(file);
+	// // byte[] data = {1, 2, 3, 4, 5};
+	// // out.write(data);
+	// // out.close();
+	// PrintWriter writer = new PrintWriter("foo.txt", "UTF-8");
+	// writer.println("The first line");
+	// writer.println("The second line");
+	// writer.close();
+	// File file = new File("foo.txt");
+	//
+	// ResponseBuilder response = Response.ok((Object) file);
+	// response.header("Content-Disposition",
+	// "attachment; filename=\"space_report_"+dateString+".txt\"");
+	// return response.build();
+	//
+	// }
 
 }

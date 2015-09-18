@@ -14,7 +14,7 @@ import org.eclipse.jetty.util.security.Constraint;
 import org.eclipse.jetty.util.security.Credential;
 import org.eclipse.jetty.webapp.WebAppContext;
 
-import com.jason.space_rest_api.BookingReporter;
+import com.jason.space_rest_api.BookingReportServlet;
 
 /**
  * This class launches the web application in an embedded Jetty container. This is the entry point to your application. The Java
@@ -45,7 +45,7 @@ public class Main {
         root.setDescriptor(webappDirLocation + "/WEB-INF/web.xml");
         root.setResourceBase(webappDirLocation);
         root.setSecurityHandler(basicAuth("admin", "admin", "space-marylebone"));
-        //root.addServlet(new ServletHolder(new BookingReporter()),"/api/getreport");
+        root.addServlet(new ServletHolder(new BookingReportServlet()),"/api/getreport");
 
         server.setHandler(root);
 
