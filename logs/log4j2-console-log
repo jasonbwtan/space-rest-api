@@ -1,14 +1,35 @@
-21:58:07 INFO  MyResource:addUser(173): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
-21:58:07 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
-21:58:34 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
-21:59:11 INFO  MyResource:addUser(173): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
-21:59:11 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
-22:00:05 INFO  MyResource:addUser(173): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
-22:00:05 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
-22:00:11 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
-22:01:16 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
-22:02:18 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
-23:29:11 INFO  MyResource:addUser(179): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
-23:29:11 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
-23:29:15 INFO  MyResource:addUser(179): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
-23:29:15 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+17:53:01 INFO  MyResource:addUser(185): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+17:53:01 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+17:53:12 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+17:55:27 INFO  MyResource:addUser(185): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+17:55:27 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+17:55:56 INFO  MyResource:addUser(185): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+17:55:56 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+17:56:33 INFO  MyResource:addUser(185): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+17:56:34 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+17:56:36 INFO  MyResource:addUser(185): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+17:56:36 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+17:56:37 INFO  MyResource:addUser(185): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+17:56:37 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+17:56:38 INFO  MyResource:addUser(185): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+17:56:38 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+17:56:39 INFO  MyResource:addUser(185): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+17:56:39 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+17:56:40 INFO  MyResource:addUser(185): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+17:56:40 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+17:57:07 INFO  MyResource:addUser(185): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+17:57:07 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+17:57:08 INFO  MyResource:addUser(185): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+17:57:08 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+17:57:09 INFO  MyResource:addUser(185): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+17:57:09 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+17:57:10 INFO  MyResource:addUser(185): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+17:57:10 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+17:57:11 INFO  MyResource:addUser(185): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+17:57:11 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+17:57:12 INFO  MyResource:addUser(185): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+17:57:12 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+17:57:13 INFO  MyResource:addUser(185): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+17:57:13 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+17:57:26 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties
+17:58:43 INFO  CustomerDaoImpl:getSessionFactory(62): Using default hibernate.cfg.xml properties

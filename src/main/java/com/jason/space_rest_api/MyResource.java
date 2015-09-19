@@ -72,20 +72,15 @@ public class MyResource {
 				+ dbUri.getPath();
 
 	}
+	@GET
+	@Path("/getall")
+	public String getAll() {
+		return "result"+customerService.findAll().toString();
 
-	// @GET
-	// @Path("/getreport")
-	// public String getReport(@QueryParam("from") String from,
-	// @QueryParam("to") String to){
-	// String params = from+to;
-	// return
-	// "Authorized. /getreport is a protected method! Parameters:"+params;
-	//
-	//
-	// }
+	}
 
 	@GET
-	@Path("/testexcel")
+	@Path("/getreport")
 	@Produces("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 	public Response exportExcel(@QueryParam("from") String from,
 			@QueryParam("to") String to) throws Exception {
@@ -100,9 +95,9 @@ public class MyResource {
 
 		} else {
 			List<Customer> customers = customerService.findAll();
-			Customer e = new Customer("JT1", "jason@testmail.com","07123456789", "com.JT", new Date(
-					System.currentTimeMillis()), 5, 1, 1,"it was great");
-			customers.add(e);
+			//Customer e = new Customer("JT1", "jason@testmail.com","07123456789", "com.JT", new Date(
+					//System.currentTimeMillis()), 5, 1, 1,"it was great");
+			//customers.add(e);
 			for (int i = 0; i < customers.size(); i++) {
 				XSSFRow row = sheet.createRow(i + 3);
 				Customer customer = customers.get(i);
