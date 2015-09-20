@@ -73,12 +73,12 @@ public class MyResource {
 
 	}
 	@GET
-	@Path("/getall")
-	public String getAll() {
-		return "result"+customerService.findAll().toString();
-
+	@Path("/getcount")
+	public int getAll() {
+		return customerService.findAll().size();
 	}
 
+	
 	@GET
 	@Path("/getreport")
 	@Produces("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
