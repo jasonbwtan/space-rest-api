@@ -90,57 +90,16 @@ public class MyResource {
 		FileInputStream inputStream = new FileInputStream(file);
 
 		XSSFWorkbook wb = new XSSFWorkbook(inputStream);
-		XSSFSheet sheet = wb.getSheetAt(0);
 		if (from != null && to != null) {
-			
+			Date startDate = Utils.formatDate(from);
+			Date endDate = Utils.formatDate(to);
+			List<Customer> customerList = customerService.findByDate(startDate, endDate);
+			wb = Utils.fillReport(wb, customerList);
 		} else {
-			List<Customer> customers = customerService.findAll();
-			//Customer e = new Customer("JT1", "jason@testmail.com","07123456789", "com.JT", new Date(
-					//System.currentTimeMillis()), 5, 1, 1,"it was great");
-			//customers.add(e);
-			for (int i = 0; i < customers.size(); i++) {
-				XSSFRow row = sheet.createRow(i + 3);
-				Customer customer = customers.get(i);
-				for (int j = 0; j < 9; j++) {
-					XSSFCell cell = row.createCell(j);
-					switch (j) {
-					case 0:
-						cell.setCellValue(customer.getCreated());
-						break;					
-					case 1:
-						cell.setCellValue(customer.getName());
-						break;
-					case 2:
-						cell.setCellValue(customer.getEmail());
-						break;
-					case 3:
-						cell.setCellValue(customer.getPhone());
-						break;
-					case 4:
-						cell.setCellValue(customer.getOrganisation());
-						break;
-					case 5:
-						cell.setCellValue(customer.getStartDate());
-						break;
-					case 6:
-						cell.setCellValue(customer.getEndDate());
-						break;
-					case 7:
-						cell.setCellValue(customer.getNumberOfPeople());
-						break;
-					case 8:
-						cell.setCellValue(customer.isCatering());
-						break;
-					case 9:
-						cell.setCellValue(customer.getAdditionalComments());
-						break;						
-					default:
-						break;
-					}
-				}
-			}
+			List<Customer> customerList = customerService.findAll();
+			wb = Utils.fillReport(wb, customerList);
 		}
-
+		
 		StreamingOutput stream = new StreamingOutput() {
 			public void write(OutputStream output) throws IOException,
 					WebApplicationException {
