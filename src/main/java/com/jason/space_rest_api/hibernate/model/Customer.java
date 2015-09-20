@@ -19,31 +19,30 @@ public class Customer extends AbstractTimestampEntity implements Serializable {
 	public static final int TRUE = 1;
 	public static final int FALSE = 0;
 
-	public Customer(String name, String email, String phone, String organisation, Date date,
-			int numberOfPeople, int catering, int overtime, String additionalComments) {
+	public Customer(String name, String email, String phone,
+			String organisation, Date startDate, Date endDate,
+			int numberOfPeople, int catering,
+			String additionalComments) {
 		super();
 		this.name = name;
 		this.email = email;
 		this.phone = phone;
 		this.organisation = organisation;
-		this.date = date;
+		this.startDate = startDate;
+		this.endDate = endDate;
 		this.numberOfPeople = numberOfPeople;
 		this.catering = catering;
-		this.overtime = overtime;
 		this.additionalComments = additionalComments;
 	}
 
-	public Customer(long id, String name, String email, String phone, String organisation,
-			Date date, int numberOfPeople, int catering, int overtime,
+	public Customer(long id, String name, String email, String phone,
+			String organisation, Date startDate, Date endDate,
+			int numberOfPeople, int catering, int overtime,
 			String additionalComments) {
-		this(name, email, phone, organisation, date, numberOfPeople, catering, overtime, additionalComments);
+		this(name, email, phone, organisation, startDate, endDate,
+				numberOfPeople, catering, additionalComments);
 		this.id = id;
-//		this.name = name;
-//		this.organisation = organisation;
-//		this.date = date;
-//		this.numberOfPeople = numberOfPeople;
-//		this.catering = catering;
-//		this.overtime = overtime;
+
 	}
 
 	public Customer() {
@@ -67,18 +66,19 @@ public class Customer extends AbstractTimestampEntity implements Serializable {
 	@Column(name = "organisation")
 	private String organisation;
 
-	@Column(name = "date")
+	@Column(name = "startDate")
 	@Type(type = "timestamp")
-	private Date date;
+	private Date startDate;
+
+	@Column(name = "endDate")
+	@Type(type = "timestamp")
+	private Date endDate;
 
 	@Column(name = "numberOfPeople")
 	private int numberOfPeople;
 
 	@Column(name = "catering")
 	private int catering;
-
-	@Column(name = "overtime")
-	private int overtime;
 
 	@Column(name = "additionalComments")
 	private String additionalComments;
@@ -103,20 +103,20 @@ public class Customer extends AbstractTimestampEntity implements Serializable {
 		return organisation;
 	}
 
-	public Date getDate() {
-		return date;
+	public Date getStartDate() {
+		return startDate;
 	}
 
+	public Date getEndDate() {
+		return endDate;
+	}	
+	
 	public int getNumberOfPeople() {
 		return numberOfPeople;
 	}
 
 	public int isCatering() {
 		return catering;
-	}
-
-	public int isOvertime() {
-		return overtime;
 	}
 
 	public String getAdditionalComments() {
@@ -143,20 +143,18 @@ public class Customer extends AbstractTimestampEntity implements Serializable {
 		this.organisation = organisation;
 	}
 
-	public void setDate(Date date) {
-		this.date = date;
+	public void setStartDate(Date startDate) {
+		this.startDate = startDate;
 	}
-
+	public void setEndDate(Date endDate) {
+		this.endDate = endDate;
+	}
 	public void setNumberOfPeople(int numberOfPeople) {
 		this.numberOfPeople = numberOfPeople;
 	}
 
 	public void setCatering(int catering) {
 		this.catering = catering;
-	}
-
-	public void setOvertime(int overtime) {
-		this.overtime = overtime;
 	}
 
 	public void setAdditionalComments(String additionalComments) {
@@ -166,9 +164,8 @@ public class Customer extends AbstractTimestampEntity implements Serializable {
 	@Override
 	public String toString() {
 		return String
-				.format("Customer [id:%s, name:%s,organisation:%s,date:%s,numOfPeople:%s,catering:%b,overtime:%b]",
-						id, name, organisation, date, numberOfPeople, catering,
-						overtime);
+				.format("Customer [id:%s, name:%s,organisation:%s,startDate:%s,endDate:%s,numOfPeople:%s,catering:%b]",
+						id, name, organisation, startDate,endDate, numberOfPeople, catering);
 	}
 
 	@Override
@@ -180,20 +177,20 @@ public class Customer extends AbstractTimestampEntity implements Serializable {
 					&& this.email.equals(customerArg.email)
 					&& this.email.equals(customerArg.phone)
 					&& this.organisation.equals(customerArg.organisation)
-					&& this.date.equals(customerArg.date)
+					&& this.startDate.equals(customerArg.startDate)
+					&& this.endDate.equals(customerArg.startDate)
 					&& this.numberOfPeople == customerArg.numberOfPeople
-					&& this.catering == customerArg.catering
-					&& this.overtime == customerArg.overtime) {
+					&& this.catering == customerArg.catering) {
 				return true;
 			}
 		}
 		return false;
 	}
 
-//	public static void main(String[] args) {
-//		Customer c = new Customer("JT", "com.JT", new Date(
-//				System.currentTimeMillis()), 5, TRUE, TRUE);
-//		System.out.println(c);
-//		System.out.println(c.equals(c));
-//	}
+	// public static void main(String[] args) {
+	// Customer c = new Customer("JT", "com.JT", new Date(
+	// System.currentTimeMillis()), 5, TRUE, TRUE);
+	// System.out.println(c);
+	// System.out.println(c.equals(c));
+	// }
 }

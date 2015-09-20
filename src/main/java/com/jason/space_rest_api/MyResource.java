@@ -92,7 +92,7 @@ public class MyResource {
 		XSSFWorkbook wb = new XSSFWorkbook(inputStream);
 		XSSFSheet sheet = wb.getSheetAt(0);
 		if (from != null && to != null) {
-
+			
 		} else {
 			List<Customer> customers = customerService.findAll();
 			//Customer e = new Customer("JT1", "jason@testmail.com","07123456789", "com.JT", new Date(
@@ -105,30 +105,33 @@ public class MyResource {
 					XSSFCell cell = row.createCell(j);
 					switch (j) {
 					case 0:
+						cell.setCellValue(customer.getCreated());
+						break;					
+					case 1:
 						cell.setCellValue(customer.getName());
 						break;
-					case 1:
+					case 2:
 						cell.setCellValue(customer.getEmail());
 						break;
-					case 2:
+					case 3:
 						cell.setCellValue(customer.getPhone());
 						break;
-					case 3:
+					case 4:
 						cell.setCellValue(customer.getOrganisation());
 						break;
-					case 4:
-						cell.setCellValue(customer.getDate());
-						break;
 					case 5:
-						cell.setCellValue(customer.getNumberOfPeople());
+						cell.setCellValue(customer.getStartDate());
 						break;
 					case 6:
-						cell.setCellValue(customer.isCatering());
+						cell.setCellValue(customer.getEndDate());
 						break;
 					case 7:
-						cell.setCellValue(customer.isOvertime());
+						cell.setCellValue(customer.getNumberOfPeople());
 						break;
 					case 8:
+						cell.setCellValue(customer.isCatering());
+						break;
+					case 9:
 						cell.setCellValue(customer.getAdditionalComments());
 						break;						
 					default:
@@ -165,20 +168,20 @@ public class MyResource {
 	public Response addUser(@FormParam("name") String name,
 			@FormParam("email") String email, @FormParam("phone") String phone,
 			@FormParam("organisation") String organisation,
-			@FormParam("date") String dateString,
+			@FormParam("startDate") String startDateString,
+			@FormParam("endDate") String endDateString,
 			@FormParam("numberOfPeople") int numberOfPeople,
 			@FormParam("catering") int catering,
-			@FormParam("overtime") int overtime,
 			@FormParam("additionalComments") String additionalComments) {
 		try {
 			logger.info(String
 					.format("Received POST Request with params:[name:%s,organisation:%s,date:%s,numberOfPeople:%s,catering:%s,overtime:%s",
-							name, organisation, dateString, numberOfPeople,
-							catering, overtime));
-			Date date = Utils.formatDate(dateString);
-
+							name, organisation, startDateString, endDateString, numberOfPeople,
+							catering));
+			Date startDate = Utils.formatDate(startDateString);
+			Date endDate = Utils.formatDate(endDateString);
 			Customer customer = new Customer(name, email, phone, organisation,
-					date, numberOfPeople, catering, overtime,
+					startDate, endDate, numberOfPeople, catering,
 					additionalComments);
 			customerService.persist(customer);
 		} catch (ParseException e) {
@@ -186,14 +189,14 @@ public class MyResource {
 					.status(200)
 					.entity(String
 							.format("Received POST Request, but could not parse dateString:%s",
-									dateString)).build();
+									startDateString)).build();
 		}
 		return Response
 				.status(200)
 				.entity(String
-						.format("Successfully received and submitted POST Request with params:[name:%s,organisation:%s,date:%s,numberOfPeople:%s,catering:%s,overtime:%s",
-								name, organisation, dateString, numberOfPeople,
-								catering, overtime)).build();
+						.format("Successfully received and submitted POST Request with params:[name:%s,organisation:%s,startDate:%s,endDate:%s,numberOfPeople:%s,catering:%s",
+								name, organisation, startDateString,endDateString, numberOfPeople,
+								catering)).build();
 	}
 
 	// @GET

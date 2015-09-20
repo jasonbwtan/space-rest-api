@@ -1,0 +1,51 @@
+2015-09-19 17:53:01 INFO  com.jason.space_rest_api.MyResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+2015-09-19 17:53:01 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-19 17:53:01 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-19 17:53:12 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-19 17:55:27 INFO  com.jason.space_rest_api.MyResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+2015-09-19 17:55:27 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-19 17:55:27 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-19 17:55:56 INFO  com.jason.space_rest_api.MyResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+2015-09-19 17:55:56 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-19 17:55:56 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-19 17:56:33 INFO  com.jason.space_rest_api.MyResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+2015-09-19 17:56:33 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-19 17:56:34 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-19 17:56:36 INFO  com.jason.space_rest_api.MyResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+2015-09-19 17:56:36 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-19 17:56:36 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-19 17:56:37 INFO  com.jason.space_rest_api.MyResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+2015-09-19 17:56:37 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-19 17:56:37 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-19 17:56:38 INFO  com.jason.space_rest_api.MyResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+2015-09-19 17:56:38 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-19 17:56:38 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-19 17:56:39 INFO  com.jason.space_rest_api.MyResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+2015-09-19 17:56:39 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-19 17:56:39 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-19 17:56:40 INFO  com.jason.space_rest_api.MyResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+2015-09-19 17:56:40 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-19 17:56:40 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-19 17:57:07 INFO  com.jason.space_rest_api.MyResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+2015-09-19 17:57:07 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-19 17:57:07 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-19 17:57:08 INFO  com.jason.space_rest_api.MyResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+2015-09-19 17:57:08 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-19 17:57:08 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-19 17:57:09 INFO  com.jason.space_rest_api.MyResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+2015-09-19 17:57:09 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-19 17:57:09 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-19 17:57:10 INFO  com.jason.space_rest_api.MyResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+2015-09-19 17:57:10 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-19 17:57:10 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-19 17:57:11 INFO  com.jason.space_rest_api.MyResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+2015-09-19 17:57:11 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-19 17:57:11 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-19 17:57:12 INFO  com.jason.space_rest_api.MyResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+2015-09-19 17:57:12 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-19 17:57:12 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-19 17:57:13 INFO  com.jason.space_rest_api.MyResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:12,catering:1,overtime:1
+2015-09-19 17:57:13 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-19 17:57:13 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-19 17:57:26 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-19 17:58:43 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties

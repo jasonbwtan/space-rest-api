@@ -1,5 +1,6 @@
 package com.javacodegeeks.snippets.enterprise.hibernate.service;
 
+import java.util.Date;
 import java.util.List;
 
 import com.jason.space_rest_api.hibernate.dao.CustomerDao;
@@ -41,6 +42,12 @@ public class CustomerService {
 		return Customer;
 	}
 
+	public List findByDate(Date startDate,Date endDate){
+		customerDaoImpl.openCurrentSession();
+		List list = customerDaoImpl.findByDate(startDate, endDate);
+		return list;
+	}
+		
 	public void delete(long id) {
 		customerDaoImpl.openCurrentSessionwithTransaction();
 		Customer Customer = customerDaoImpl.findById(id);
