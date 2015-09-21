@@ -39,5 +39,7 @@ public class App {
 		Date endDate = new Date(System.currentTimeMillis()+40000l);
 		System.out.println(customerService.findByDate(startDate, endDate));
 		System.exit(0);
+		
+		
 	}
 }

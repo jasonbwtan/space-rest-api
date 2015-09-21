@@ -24,9 +24,15 @@ public class CustomerDaoImpl implements CustomerDao<Customer, Long> {
 	private Transaction currentTransaction;
 	static final Logger logger = LogManager.getLogger();
 
-	public CustomerDaoImpl() {
+	private static CustomerDaoImpl customerDaoImpl = new CustomerDaoImpl();
+
+	public static CustomerDaoImpl getInstance() {
+		return customerDaoImpl;
 	}
 
+	// private CustomerDaoImpl() {
+	// customerDaoImpl = new CustomerDaoImpl();
+	// }
 	public Session openCurrentSession() {
 		currentSession = getSessionFactory().openSession();
 		return currentSession;
@@ -77,17 +83,6 @@ public class CustomerDaoImpl implements CustomerDao<Customer, Long> {
 		return sessionFactory;
 	}
 
-	@SuppressWarnings("unchecked")
-	public List<Customer> findByDate(Date startDate,
-			Date endDate) {
-	
-		Criteria criteria = getCurrentSession().createCriteria(Customer.class)
-		   .add(Restrictions.ge("startDate", startDate))
-		   .add(Restrictions.le("endDate", endDate));
-		return (List<Customer>)criteria.list();
-		
-	}
-
 	public Session getCurrentSession() {
 		return currentSession;
 	}
@@ -105,28 +100,29 @@ public class CustomerDaoImpl implements CustomerDao<Customer, Long> {
 	}
 
 	public void persist(Customer entity) {
+		openCurrentSessionwithTransaction();
 		getCurrentSession().save(entity);
+		closeCurrentSessionwithTransaction();
 	}
 
 	public void update(Customer entity) {
+		openCurrentSessionwithTransaction();
 		getCurrentSession().update(entity);
+		closeCurrentSessionwithTransaction();
 	}
 
-	public Customer findById(Long id) {
-		Customer Customer = (Customer) getCurrentSession().get(Customer.class,
+	public void delete(long id) {
+		openCurrentSessionwithTransaction();
+		Customer customer = (Customer) getCurrentSession().get(Customer.class,
 				id);
-		return Customer;
+		getCurrentSession().delete(customer);
+		closeCurrentSessionwithTransaction();
 	}
 
 	public void delete(Customer entity) {
+		openCurrentSessionwithTransaction();
 		getCurrentSession().delete(entity);
-	}
-
-	@SuppressWarnings("unchecked")
-	public List<Customer> findAll() {
-		List<Customer> books = (List<Customer>) getCurrentSession()
-				.createQuery("from Customer").list();
-		return books;
+		closeCurrentSessionwithTransaction();
 	}
 
 	public void deleteAll() {
@@ -134,6 +130,36 @@ public class CustomerDaoImpl implements CustomerDao<Customer, Long> {
 		for (Customer entity : entityList) {
 			delete(entity);
 		}
+	}
+
+	public Customer findById(Long id) {
+		openCurrentSession();
+		Customer Customer = (Customer) getCurrentSession().get(Customer.class,
+				id);
+		closeCurrentSession();
+		return Customer;
+	}
+
+	@SuppressWarnings("unchecked")
+	public List<Customer> findByDate(Date startDate, Date endDate) {
+		openCurrentSession();
+		Criteria criteria = getCurrentSession().createCriteria(Customer.class)
+				.add(Restrictions.ge("startDate", startDate))
+				.add(Restrictions.le("endDate", endDate));
+		List<Customer> list = (List<Customer>) criteria.list();
+		closeCurrentSession();
+
+		return list;
+
+	}
+
+	@SuppressWarnings("unchecked")
+	public List<Customer> findAll() {
+		openCurrentSession();
+		List<Customer> books = (List<Customer>) getCurrentSession()
+				.createQuery("from Customer").list();
+		closeCurrentSession();
+		return books;
 	}
 
 }

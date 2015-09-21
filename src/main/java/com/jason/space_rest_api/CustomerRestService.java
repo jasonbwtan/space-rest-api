@@ -24,21 +24,23 @@ import javax.ws.rs.core.StreamingOutput;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.CreationHelper;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl;
 import com.jason.space_rest_api.hibernate.model.Customer;
-import com.javacodegeeks.snippets.enterprise.hibernate.service.CustomerService;
 
 /**
  * Root resource (exposed at "myresource" path)
  */
 @Path("api")
-public class MyResource {
+public class CustomerRestService {
 	static final Logger logger = LogManager.getLogger();
-	static final CustomerService customerService = CustomerService
+	static final CustomerDaoImpl dao = CustomerDaoImpl
 			.getInstance();
 
 	/**
@@ -72,13 +74,13 @@ public class MyResource {
 				+ dbUri.getPath();
 
 	}
+
 	@GET
 	@Path("/getcount")
 	public int getAll() {
-		return customerService.findAll().size();
+		return dao.findAll().size();
 	}
 
-	
 	@GET
 	@Path("/getreport")
 	@Produces("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
@@ -91,15 +93,18 @@ public class MyResource {
 		List<Customer> customerList = null;
 		XSSFWorkbook wb = new XSSFWorkbook(inputStream);
 		XSSFSheet sheet = wb.getSheetAt(0);
-
+		CellStyle dateStyle = wb.createCellStyle();
+		CreationHelper createHelper = wb.getCreationHelper();
+		dateStyle.setDataFormat(createHelper.createDataFormat().getFormat(
+				"yyyy/mm/dd hh:mm"));
 		if (from != null && to != null) {
 			Date startDate = Utils.formatDate(from);
 			Date endDate = Utils.formatDate(to);
-			customerList = customerService.findByDate(startDate, endDate);
-			//wb = Utils.fillReport(wb, customerList);
+			customerList = dao.findByDate(startDate, endDate);
+			// wb = Utils.fillReport(wb, customerList);
 		} else {
-			customerList = customerService.findAll();
-			//wb = Utils.fillReport(wb, customerList);
+			customerList = dao.findAll();
+			// wb = Utils.fillReport(wb, customerList);
 		}
 		for (int i = 0; i < customerList.size(); i++) {
 			XSSFRow row = sheet.createRow(i + 3);
@@ -109,7 +114,8 @@ public class MyResource {
 				switch (j) {
 				case 0:
 					cell.setCellValue(customer.getCreated());
-					break;					
+					cell.setCellStyle(dateStyle);
+					break;
 				case 1:
 					cell.setCellValue(customer.getName());
 					break;
@@ -124,9 +130,13 @@ public class MyResource {
 					break;
 				case 5:
 					cell.setCellValue(customer.getStartDate());
+					cell.setCellStyle(dateStyle);
+
 					break;
 				case 6:
 					cell.setCellValue(customer.getEndDate());
+					cell.setCellStyle(dateStyle);
+
 					break;
 				case 7:
 					cell.setCellValue(customer.getNumberOfPeople());
@@ -136,7 +146,7 @@ public class MyResource {
 					break;
 				case 9:
 					cell.setCellValue(customer.getAdditionalComments());
-					break;						
+					break;
 				default:
 					break;
 				}
@@ -177,14 +187,14 @@ public class MyResource {
 		try {
 			logger.info(String
 					.format("Received POST Request with params:[name:%s,organisation:%s,date:%s,numberOfPeople:%s,catering:%s,overtime:%s",
-							name, organisation, startDateString, endDateString, numberOfPeople,
-							catering));
+							name, organisation, startDateString, endDateString,
+							numberOfPeople, catering));
 			Date startDate = Utils.formatDate(startDateString);
 			Date endDate = Utils.formatDate(endDateString);
 			Customer customer = new Customer(name, email, phone, organisation,
 					startDate, endDate, numberOfPeople, catering,
 					additionalComments);
-			customerService.persist(customer);
+			dao.persist(customer);
 		} catch (ParseException e) {
 			return Response
 					.status(200)
@@ -196,8 +206,9 @@ public class MyResource {
 				.status(200)
 				.entity(String
 						.format("Successfully received and submitted POST Request with params:[name:%s,organisation:%s,startDate:%s,endDate:%s,numberOfPeople:%s,catering:%s",
-								name, organisation, startDateString,endDateString, numberOfPeople,
-								catering)).build();
+								name, organisation, startDateString,
+								endDateString, numberOfPeople, catering))
+				.build();
 	}
 
 	// @GET

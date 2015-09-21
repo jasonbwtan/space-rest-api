@@ -175,7 +175,7 @@ public class Customer extends AbstractTimestampEntity implements Serializable {
 			// this.id == customerArg.id &&
 			if (this.name.equals(customerArg.name)
 					&& this.email.equals(customerArg.email)
-					&& this.email.equals(customerArg.phone)
+					&& this.phone.equals(customerArg.phone)
 					&& this.organisation.equals(customerArg.organisation)
 					&& this.startDate.equals(customerArg.startDate)
 					&& this.endDate.equals(customerArg.startDate)
