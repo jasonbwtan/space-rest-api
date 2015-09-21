@@ -248,3 +248,4 @@
 2015-09-21 21:40:44 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
 2015-09-21 21:40:48 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
 2015-09-21 21:41:39 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 22:23:43 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties

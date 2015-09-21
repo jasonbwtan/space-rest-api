@@ -93,10 +93,10 @@ public class CustomerRestService {
 		List<Customer> customerList = null;
 		XSSFWorkbook wb = new XSSFWorkbook(inputStream);
 		XSSFSheet sheet = wb.getSheetAt(0);
-		CellStyle dateStyle = wb.createCellStyle();
-		CreationHelper createHelper = wb.getCreationHelper();
-		dateStyle.setDataFormat(createHelper.createDataFormat().getFormat(
-				"yyyy/mm/dd hh:mm"));
+		//CellStyle dateStyle = wb.createCellStyle();
+		//CreationHelper createHelper = wb.getCreationHelper();
+		//dateStyle.setDataFormat(createHelper.createDataFormat().getFormat(
+				//"yyyy/mm/dd hh:mm"));
 		if (from != null && to != null) {
 			Date startDate = Utils.formatDate(from);
 			Date endDate = Utils.formatDate(to);
@@ -109,12 +109,13 @@ public class CustomerRestService {
 		for (int i = 0; i < customerList.size(); i++) {
 			XSSFRow row = sheet.createRow(i + 3);
 			Customer customer = customerList.get(i);
-			for (int j = 0; j < 9; j++) {
+			for (int j = 0; j < 10; j++) {
 				XSSFCell cell = row.createCell(j);
 				switch (j) {
 				case 0:
 					cell.setCellValue(customer.getCreated());
-					cell.setCellStyle(dateStyle);
+					cell.setCellStyle(sheet.getColumnStyle(j));
+					//cell.setCellStyle(dateStyle);
 					break;
 				case 1:
 					cell.setCellValue(customer.getName());
@@ -130,13 +131,11 @@ public class CustomerRestService {
 					break;
 				case 5:
 					cell.setCellValue(customer.getStartDate());
-					cell.setCellStyle(dateStyle);
-
+					cell.setCellStyle(sheet.getColumnStyle(j));
 					break;
 				case 6:
 					cell.setCellValue(customer.getEndDate());
-					cell.setCellStyle(dateStyle);
-
+					cell.setCellStyle(sheet.getColumnStyle(j));
 					break;
 				case 7:
 					cell.setCellValue(customer.getNumberOfPeople());

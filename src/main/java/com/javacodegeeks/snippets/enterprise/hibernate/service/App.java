@@ -2,6 +2,8 @@
 package com.javacodegeeks.snippets.enterprise.hibernate.service;
 import java.util.Date;
 
+import com.jason.space_rest_api.deprecated.CustomerService;
+
 //import java.util.Date;
 //import java.util.List;
 //

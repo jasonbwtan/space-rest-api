@@ -1,4 +1,4 @@
-package com.javacodegeeks.snippets.enterprise.hibernate.service;
+package com.jason.space_rest_api.deprecated;
 
 import java.util.Date;
 import java.util.List;

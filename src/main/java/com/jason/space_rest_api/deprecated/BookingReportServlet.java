@@ -1,4 +1,4 @@
-package com.jason.space_rest_api;
+package com.jason.space_rest_api.deprecated;
 
 import java.io.File;
 import java.io.FileInputStream;

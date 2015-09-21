@@ -21,7 +21,7 @@ public class Customer extends AbstractTimestampEntity implements Serializable {
 
 	public Customer(String name, String email, String phone,
 			String organisation, Date startDate, Date endDate,
-			int numberOfPeople, int catering,
+			int numberOfPeople, String catering,
 			String additionalComments) {
 		super();
 		this.name = name;
@@ -37,7 +37,7 @@ public class Customer extends AbstractTimestampEntity implements Serializable {
 
 	public Customer(long id, String name, String email, String phone,
 			String organisation, Date startDate, Date endDate,
-			int numberOfPeople, int catering, int overtime,
+			int numberOfPeople, String catering, int overtime,
 			String additionalComments) {
 		this(name, email, phone, organisation, startDate, endDate,
 				numberOfPeople, catering, additionalComments);
@@ -78,7 +78,7 @@ public class Customer extends AbstractTimestampEntity implements Serializable {
 	private int numberOfPeople;
 
 	@Column(name = "catering")
-	private int catering;
+	private String catering;
 
 	@Column(name = "additionalComments")
 	private String additionalComments;
@@ -115,7 +115,7 @@ public class Customer extends AbstractTimestampEntity implements Serializable {
 		return numberOfPeople;
 	}
 
-	public int isCatering() {
+	public String isCatering() {
 		return catering;
 	}
 
@@ -153,7 +153,7 @@ public class Customer extends AbstractTimestampEntity implements Serializable {
 		this.numberOfPeople = numberOfPeople;
 	}
 
-	public void setCatering(int catering) {
+	public void setCatering(String catering) {
 		this.catering = catering;
 	}
 

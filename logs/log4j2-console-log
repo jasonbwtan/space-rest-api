@@ -200,3 +200,4 @@
 21:40:44 INFO  CustomerDaoImpl:getSessionFactory(77): Using default hibernate.cfg.xml properties
 21:40:48 INFO  CustomerDaoImpl:getSessionFactory(77): Using default hibernate.cfg.xml properties
 21:41:39 INFO  CustomerDaoImpl:getSessionFactory(77): Using default hibernate.cfg.xml properties
+22:23:43 INFO  CustomerDaoImpl:getSessionFactory(77): Using default hibernate.cfg.xml properties

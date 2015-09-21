@@ -12,8 +12,8 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import com.jason.space_rest_api.deprecated.CustomerService;
 import com.jason.space_rest_api.hibernate.model.Customer;
-import com.javacodegeeks.snippets.enterprise.hibernate.service.CustomerService;
 
 public class Utils {
 	static final Logger logger = LogManager.getLogger();
