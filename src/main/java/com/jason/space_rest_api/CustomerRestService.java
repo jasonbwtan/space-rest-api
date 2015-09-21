@@ -181,7 +181,7 @@ public class CustomerRestService {
 			@FormParam("startDate") String startDateString,
 			@FormParam("endDate") String endDateString,
 			@FormParam("numberOfPeople") int numberOfPeople,
-			@FormParam("catering") int catering,
+			@FormParam("catering") String catering,
 			@FormParam("additionalComments") String additionalComments) {
 		try {
 			logger.info(String
