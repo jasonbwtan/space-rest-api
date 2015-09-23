@@ -38,7 +38,7 @@ import com.jason.space_rest_api.hibernate.model.Customer;
  * Root resource (exposed at "myresource" path)
  */
 @Path("api")
-public class CustomerRestService {
+public class CustomerManagerResource {
 	static final Logger logger = LogManager.getLogger();
 	static final CustomerDaoImpl dao = CustomerDaoImpl
 			.getInstance();
@@ -185,28 +185,25 @@ public class CustomerRestService {
 			@FormParam("additionalComments") String additionalComments) {
 		try {
 			logger.info(String
-					.format("Received POST Request with params:[name:%s,organisation:%s,date:%s,numberOfPeople:%s,catering:%s,overtime:%s",
-							name, organisation, startDateString, endDateString,
-							numberOfPeople, catering));
+					.format("Received POST Request, but could not parse dateString:%s",
+							startDateString));
 			Date startDate = Utils.formatDate(startDateString);
 			Date endDate = Utils.formatDate(endDateString);
 			Customer customer = new Customer(name, email, phone, organisation,
 					startDate, endDate, numberOfPeople, catering,
 					additionalComments);
 			dao.persist(customer);
+			Utils.sendMail(customer);
 		} catch (ParseException e) {
 			return Response
-					.status(200)
-					.entity(String
-							.format("Received POST Request, but could not parse dateString:%s",
-									startDateString)).build();
+					.status(500)
+					.entity("Bad Request: Please enter a valid date format").build();
 		}
 		return Response
 				.status(200)
 				.entity(String
-						.format("Successfully received and submitted POST Request with params:[name:%s,organisation:%s,startDate:%s,endDate:%s,numberOfPeople:%s,catering:%s",
-								name, organisation, startDateString,
-								endDateString, numberOfPeople, catering))
+						.format("Thank you very much. Your booking enquiry for %s has been received. You will hear from us shortly.",
+								startDateString))
 				.build();
 	}
 

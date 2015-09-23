@@ -14,33 +14,38 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import com.jason.space_rest_api.deprecated.CustomerService;
 import com.jason.space_rest_api.hibernate.model.Customer;
+import com.sendgrid.SendGrid;
+import com.sendgrid.SendGridException;
 
 public class Utils {
 	static final Logger logger = LogManager.getLogger();
 
-	public static Date formatDate(String date) throws ParseException{
+	public static Date formatDate(String date) throws ParseException {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd hh:mm");
 		logger.debug(sdf.parse(date));
 		return sdf.parse(date);
 	}
-	
-	public static String validateMsidsn(String msidsn){
+
+	public static String validateMsidsn(String msidsn) {
 		return "";
 	}
-	
+
 	public static void main(String[] args) throws ParseException {
 		System.out.println(Utils.formatDate("2015/05/01 17:00"));
 	}
-	
-	public static String validateAdditionalComments(String additionalComments){
-		 return additionalComments.substring(0, Math.min(additionalComments.length(), 255));
+
+	public static String validateAdditionalComments(String additionalComments) {
+		return additionalComments.substring(0,
+				Math.min(additionalComments.length(), 255));
 	}
-	
-	public static XSSFWorkbook fillReport(XSSFWorkbook wb,List<Customer> customerList){
+
+	public static XSSFWorkbook fillReport(XSSFWorkbook wb,
+			List<Customer> customerList) {
 		XSSFSheet sheet = wb.getSheetAt(0);
-		//Customer e = new Customer("JT1", "jason@testmail.com","07123456789", "com.JT", new Date(
-				//System.currentTimeMillis()), 5, 1, 1,"it was great");
-		//customerList.add(e);
+		// Customer e = new Customer("JT1", "jason@testmail.com","07123456789",
+		// "com.JT", new Date(
+		// System.currentTimeMillis()), 5, 1, 1,"it was great");
+		// customerList.add(e);
 		for (int i = 0; i < customerList.size(); i++) {
 			XSSFRow row = sheet.createRow(i + 3);
 			Customer customer = customerList.get(i);
@@ -49,7 +54,7 @@ public class Utils {
 				switch (j) {
 				case 0:
 					cell.setCellValue(customer.getCreated());
-					break;					
+					break;
 				case 1:
 					cell.setCellValue(customer.getName());
 					break;
@@ -76,12 +81,41 @@ public class Utils {
 					break;
 				case 9:
 					cell.setCellValue(customer.getAdditionalComments());
-					break;						
+					break;
 				default:
 					break;
 				}
 			}
 		}
 		return wb;
+	}
+
+	public static void sendMail(Customer customer) {
+		SendGrid sendgrid = new SendGrid("app41598790@heroku.com",
+				"y7czbo6c1513");
+
+		SendGrid.Email email = new SendGrid.Email();
+		email.addTo("jasonbwtan@hotmail.com");
+		email.setFrom("jasonbwtan@hotmail.com");
+		email.setSubject("Space Booking Request for: " + customer.getName()
+				+ " Date: " + customer.getCreated());
+		email.setHtml("<p>Details for booking request received on:"
+				+ customer.getCreated() + "</p>" + "<p>Name: <b>"
+				+ customer.getName() + "</b><br>" + "Email: <b>"
+				+ customer.getEmail() + "</b><br>" + "Phone: <b>"
+				+ customer.getPhone() + "</b><br>" + "Organisation: <b>"
+				+ customer.getOrganisation() + "</b><br>" + "Start Date: <b>"
+				+ customer.getStartDate() + "</b><br>" + "End Date: <b>"
+				+ customer.getEndDate() + "</b><br>" + "Number of People: <b>"
+				+ customer.getEndDate() + "</b><br>" + "Catering: <b>"
+				+ customer.getEndDate() + "</b><br>"
+				+ "Additional Comments: <b>" + customer.getAdditionalComments()
+				+ "</b><br></p>" + "<p>Sent automatically from https://space-rest-api.herokuapp.com");
+		try {
+			SendGrid.Response response = sendgrid.send(email);
+			System.out.println(response.getCode());
+		} catch (SendGridException e) {
+			System.out.println(e);
+		}
 	}
 }

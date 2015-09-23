@@ -1,0 +1,251 @@
+2015-09-21 18:21:43 INFO  com.jason.space_rest_api.MyResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 18:21:43 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 18:21:43 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 18:21:43 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 19:03:21 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 19:40:03 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 19:40:35 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 19:44:10 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 19:44:51 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 19:44:52 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 19:45:17 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 19:45:18 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:02:05 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:02:06 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:02:16 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 20:02:16 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 20:02:16 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 20:02:17 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:03:04 DEBUG com.jason.space_rest_api.Utils - Thu Jan 01 00:00:00 GMT 1970
+2015-09-21 20:03:04 DEBUG com.jason.space_rest_api.Utils - Fri Jan 01 17:00:00 GMT 2016
+2015-09-21 20:03:04 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:04:35 DEBUG com.jason.space_rest_api.Utils - Thu Jan 01 00:00:00 GMT 1970
+2015-09-21 20:04:35 DEBUG com.jason.space_rest_api.Utils - Fri Jan 01 17:00:00 GMT 2016
+2015-09-21 20:04:35 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:21:40 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:21:41 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:21:41 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:11 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:12 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:12 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:22 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:23 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:23 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:38 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:39 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:39 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:39 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:39 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:40 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:40 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:40 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:40 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:40 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:40 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:40 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:41 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:41 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:41 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:41 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:41 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:41 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:41 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:42 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:42 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:42 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:42 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:47 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:48 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:48 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:48 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:22:49 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:23:15 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:23:16 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:23:38 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:23:39 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:37:14 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:37:15 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:37:15 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:38:46 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:38:47 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:38:47 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:38:48 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:38:48 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:38:48 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:38:48 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:38:48 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:39:07 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:39:08 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:39:08 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:53:49 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:53:50 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:53:50 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:53:50 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:53:50 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:53:51 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:53:51 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:53:51 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:53:51 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:53:51 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:53:51 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:53:51 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:53:52 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:53:52 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:53:52 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:02 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:03 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:03 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:18 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:19 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:19 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:20 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:20 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:20 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:20 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:20 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:20 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:20 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:21 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:21 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:21 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:21 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:21 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:48 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:49 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:49 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:49 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:50 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:50 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:50 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:50 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:50 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:50 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:51 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:51 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:51 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:55:51 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:56:24 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:56:25 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:56:25 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:56:25 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:56:25 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:56:25 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:56:26 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:56:26 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:56:26 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:56:26 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:56:26 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:56:26 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:56:27 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:56:27 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:57:29 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:57:31 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:57:31 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:57:31 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:57:31 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:57:31 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:57:31 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:57:32 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:57:32 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:57:32 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:57:32 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:57:32 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:57:32 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:59:17 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:59:18 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:59:18 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:59:18 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:59:19 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:59:19 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:59:19 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:59:19 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:59:19 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:59:19 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:59:19 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:59:20 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:59:20 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 20:59:20 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:21 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:35 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 21:40:35 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 21:40:35 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 21:40:35 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:37 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 21:40:37 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 21:40:37 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 21:40:37 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:38 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 21:40:38 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 21:40:38 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 21:40:38 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:39 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 21:40:39 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 21:40:39 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 21:40:39 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:39 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 21:40:39 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 21:40:39 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 21:40:39 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:40 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 21:40:40 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 21:40:40 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 21:40:40 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:40 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 21:40:40 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 21:40:40 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 21:40:40 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:40 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 21:40:40 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 21:40:40 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 21:40:40 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:40 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 21:40:40 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 21:40:40 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 21:40:40 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:41 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 21:40:41 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 21:40:41 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 21:40:41 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:41 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 21:40:41 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 21:40:41 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 21:40:41 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:41 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 21:40:41 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 21:40:41 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 21:40:41 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:41 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 21:40:41 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 21:40:41 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 21:40:41 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:42 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 21:40:42 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 21:40:42 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 21:40:42 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:42 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 21:40:42 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 21:40:42 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 21:40:42 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:42 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 21:40:42 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 21:40:42 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 21:40:42 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:42 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 21:40:42 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 21:40:42 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 21:40:42 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:43 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 21:40:43 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 21:40:43 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 21:40:43 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:43 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 21:40:43 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 21:40:43 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 21:40:43 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:44 INFO  com.jason.space_rest_api.CustomerRestService - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+2015-09-21 21:40:44 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
+2015-09-21 21:40:44 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-21 21:40:44 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:40:48 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 21:41:39 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-21 22:23:43 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
