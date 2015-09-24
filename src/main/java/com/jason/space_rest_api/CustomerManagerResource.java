@@ -184,9 +184,7 @@ public class CustomerManagerResource {
 			@FormParam("catering") String catering,
 			@FormParam("additionalComments") String additionalComments) {
 		try {
-			logger.info(String
-					.format("Received POST Request, but could not parse dateString:%s",
-							startDateString));
+			logger.info("Begin processing customer add request");
 			Date startDate = Utils.formatDate(startDateString);
 			Date endDate = Utils.formatDate(endDateString);
 			Customer customer = new Customer(name, email, phone, organisation,
@@ -195,6 +193,9 @@ public class CustomerManagerResource {
 			dao.persist(customer);
 			Utils.sendMail(customer);
 		} catch (ParseException e) {
+			logger.info(String
+					.format("Received POST Request, but could not parse startDate:%s,endDate:%s",
+							startDateString,endDateString));			
 			return Response
 					.status(500)
 					.entity("Bad Request: Please enter a valid date format").build();

@@ -99,7 +99,7 @@ public class Utils {
 		email.setFrom("jasonbwtan@hotmail.com");
 		email.setSubject("Space Booking Request for: " + customer.getName()
 				+ " Date: " + customer.getCreated());
-		email.setHtml("<p>Details for booking request received on:"
+		email.setHtml("<p>Details for booking request received on: "
 				+ customer.getCreated() + "</p>" + "<p>Name: <b>"
 				+ customer.getName() + "</b><br>" + "Email: <b>"
 				+ customer.getEmail() + "</b><br>" + "Phone: <b>"
