@@ -120,8 +120,9 @@ public class Utils {
 				+ "Additional Comments: <b>" + customer.getAdditionalComments()
 				+ "</b><br></p>" + "<p>Sent automatically from https://space-rest-api.herokuapp.com");
 		try {
+			logger.info("Sendgrid: sending mail...");
 			SendGrid.Response response = sendgrid.send(email);
-			System.out.println(response.getCode());
+			logger.info("Sendgrid: response code.."+response.getCode());
 		} catch (SendGridException e) {
 			System.out.println(e);
 		}
