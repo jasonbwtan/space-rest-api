@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
+import org.apache.commons.lang3.time.DateUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -21,9 +22,10 @@ public class Utils {
 	static final Logger logger = LogManager.getLogger();
 
 	public static Date formatDate(String date) throws ParseException {
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd hh:mm");
-		logger.debug(sdf.parse(date));
-		return sdf.parse(date);
+		String[] acceptedFormats = {"dd/MM/yyyy","dd/MM/yyyy HH:mm","dd-MM-yyyy HH:mm:ss"};
+		Date obj = DateUtils.parseDate(date,acceptedFormats);
+		logger.debug("Utils.formatDate: converted "+date+" to: "+obj);
+		return obj;
 	}
 
 	public static String validateMsidsn(String msidsn) {
@@ -32,8 +34,14 @@ public class Utils {
 
 	public static void main(String[] args) throws ParseException {
 		System.out.println(Utils.formatDate("2015/05/01 17:00"));
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+		System.out.println(sdf.parse("2015-10-02 03:10:00"));
+		
+		String[] acceptedFormats = {"dd/MM/yyyy","dd/MM/yyyy HH:mm","dd-MM-yyyy HH:mm:ss"};
+		System.out.println(DateUtils.parseDate("12/07/2012", acceptedFormats));
+		System.out.println(DateUtils.parseDate("12/07/2012 23:59:59", acceptedFormats));
 	}
-
+	
 	public static String validateAdditionalComments(String additionalComments) {
 		return additionalComments.substring(0,
 				Math.min(additionalComments.length(), 255));

@@ -1,28 +1,4 @@
-2015-09-23 22:53:42 INFO  com.jason.space_rest_api.CustomerManagerResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
-2015-09-23 22:53:42 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
-2015-09-23 22:53:42 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
-2015-09-23 22:53:43 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
-2015-09-23 22:56:07 INFO  com.jason.space_rest_api.CustomerManagerResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
-2015-09-23 22:56:07 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
-2015-09-23 22:56:07 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
-2015-09-23 22:56:07 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
-2015-09-23 22:58:37 INFO  com.jason.space_rest_api.CustomerManagerResource - Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
-2015-09-23 22:58:37 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
-2015-09-23 22:58:37 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
-2015-09-23 22:58:37 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
-2015-09-23 23:04:07 INFO  com.jason.space_rest_api.CustomerManagerResource - Received POST Request, but could not parse dateString:2015/05/01 15:00
-2015-09-23 23:04:07 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
-2015-09-23 23:04:07 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
-2015-09-23 23:04:07 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
-2015-09-23 23:05:57 INFO  com.jason.space_rest_api.CustomerManagerResource - Received POST Request, but could not parse dateString:2015/05/01 15:00
-2015-09-23 23:05:57 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
-2015-09-23 23:05:57 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
-2015-09-23 23:05:57 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
-2015-09-23 23:07:15 INFO  com.jason.space_rest_api.CustomerManagerResource - Received POST Request, but could not parse dateString:2015/05/01 15:00
-2015-09-23 23:07:15 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
-2015-09-23 23:07:15 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
-2015-09-23 23:07:15 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
-2015-09-23 23:12:08 INFO  com.jason.space_rest_api.CustomerManagerResource - Received POST Request, but could not parse dateString:2015/05/01 15:00
-2015-09-23 23:12:08 DEBUG com.jason.space_rest_api.Utils - Fri May 01 15:00:00 BST 2015
-2015-09-23 23:12:08 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
-2015-09-23 23:12:08 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-24 21:46:04 DEBUG com.jason.space_rest_api.Utils - Fri May 01 17:00:00 BST 2015
+2015-09-24 21:50:09 DEBUG com.jason.space_rest_api.Utils - Utils.formatDate: converted 2015/05/01 17:00 to: Fri May 01 17:00:00 BST 2015
+2015-09-24 21:50:16 DEBUG com.jason.space_rest_api.Utils - Utils.formatDate: converted 2015/05/01 17:00 to: Fri May 01 17:00:00 BST 2015
+2015-09-24 21:54:16 DEBUG com.jason.space_rest_api.Utils - Utils.formatDate: converted 2015/05/01 17:00 to: Fri May 01 17:00:00 BST 2015
