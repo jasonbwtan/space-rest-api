@@ -19,7 +19,7 @@ import com.sendgrid.SendGrid;
 import com.sendgrid.SendGridException;
 
 public class Utils {
-	static final Logger logger = LogManager.getLogger();
+	static final Logger logger = LogManager.getLogger(Utils.class);
 
 	public static Date formatDate(String date) throws ParseException {
 		String[] acceptedFormats = {"dd/MM/yyyy","dd/MM/yyyy HH:mm","dd-MM-yyyy HH:mm:ss"};
@@ -115,10 +115,9 @@ public class Utils {
 				+ customer.getOrganisation() + "</b><br>" + "Start Date: <b>"
 				+ customer.getStartDate() + "</b><br>" + "End Date: <b>"
 				+ customer.getEndDate() + "</b><br>" + "Number of People: <b>"
-				+ customer.getEndDate() + "</b><br>" + "Catering: <b>"
-				+ customer.getEndDate() + "</b><br>"
-				+ "Additional Comments: <b>" + customer.getAdditionalComments()
-				+ "</b><br></p>" + "<p>Sent automatically from https://space-rest-api.herokuapp.com");
+				+ customer.getNumberOfPeople() + "</b><br>" + "Catering: <b>"
+				+ customer.isCatering() + "</b><br>" + "Additional Comments: <b>"
+				+ customer.getAdditionalComments() + "</b><br></p>" + "<p>Sent automatically from https://space-rest-api.herokuapp.com");
 		try {
 			logger.info("Sendgrid: sending mail...");
 			SendGrid.Response response = sendgrid.send(email);
