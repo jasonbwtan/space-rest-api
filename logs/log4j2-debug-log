@@ -2,3 +2,31 @@
 2015-09-24 21:50:09 DEBUG com.jason.space_rest_api.Utils - Utils.formatDate: converted 2015/05/01 17:00 to: Fri May 01 17:00:00 BST 2015
 2015-09-24 21:50:16 DEBUG com.jason.space_rest_api.Utils - Utils.formatDate: converted 2015/05/01 17:00 to: Fri May 01 17:00:00 BST 2015
 2015-09-24 21:54:16 DEBUG com.jason.space_rest_api.Utils - Utils.formatDate: converted 2015/05/01 17:00 to: Fri May 01 17:00:00 BST 2015
+2015-09-24 23:50:16 INFO  com.jason.space_rest_api.CustomerManagerResource - Begin processing customer add request
+2015-09-24 23:50:16 DEBUG com.jason.space_rest_api.Utils - Utils.formatDate: converted 2015-11-01 15:00:00 to: Sun May 08 15:00:00 GMT 7
+2015-09-24 23:50:16 DEBUG com.jason.space_rest_api.Utils - Utils.formatDate: converted 2016-05-01 17:00:00 to: Sat Nov 06 17:00:00 GMT 6
+2015-09-24 23:50:16 DEBUG com.jason.space_rest_api.CustomerManagerResource - Received Customer:Customer [id:0, name:Jason,organisation:com.jason,startDate:Sun May 08 15:00:00 GMT 7,endDate:Sat Nov 06 17:00:00 GMT 6,numOfPeople:12,catering:true]
+2015-09-24 23:50:16 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-24 23:50:18 INFO  com.jason.space_rest_api.Utils - Sendgrid: sending mail...
+2015-09-24 23:50:18 INFO  com.jason.space_rest_api.Utils - Sendgrid: response code..200
+2015-09-24 23:50:47 INFO  com.jason.space_rest_api.CustomerManagerResource - Begin processing customer add request
+2015-09-24 23:50:47 DEBUG com.jason.space_rest_api.Utils - Utils.formatDate: converted 2015-11-01 15:00:00 to: Sun May 08 15:00:00 GMT 7
+2015-09-24 23:50:47 DEBUG com.jason.space_rest_api.Utils - Utils.formatDate: converted 2016-05-01 17:00:00 to: Sat Nov 06 17:00:00 GMT 6
+2015-09-24 23:50:47 DEBUG com.jason.space_rest_api.CustomerManagerResource - Received Customer:Customer [id:0, name:Jason,organisation:com.jason,startDate:Sun May 08 15:00:00 GMT 7,endDate:Sat Nov 06 17:00:00 GMT 6,numOfPeople:12,catering:true]
+2015-09-24 23:50:47 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-24 23:50:48 INFO  com.jason.space_rest_api.Utils - Sendgrid: sending mail...
+2015-09-24 23:50:48 INFO  com.jason.space_rest_api.Utils - Sendgrid: response code..200
+2015-09-24 23:52:25 INFO  com.jason.space_rest_api.CustomerManagerResource - Begin processing customer add request
+2015-09-24 23:52:25 DEBUG com.jason.space_rest_api.Utils - Utils.formatDate: converted 2015-11-01 15:00:00 to: Sun Nov 01 15:00:00 GMT 2015
+2015-09-24 23:52:25 DEBUG com.jason.space_rest_api.Utils - Utils.formatDate: converted 2016-05-01 17:00:00 to: Sun May 01 17:00:00 BST 2016
+2015-09-24 23:52:25 DEBUG com.jason.space_rest_api.CustomerManagerResource - Received Customer:Customer [id:0, name:Jason,organisation:com.jason,startDate:Sun Nov 01 15:00:00 GMT 2015,endDate:Sun May 01 17:00:00 BST 2016,numOfPeople:12,catering:true]
+2015-09-24 23:52:26 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-24 23:52:27 INFO  com.jason.space_rest_api.Utils - Sendgrid: sending mail...
+2015-09-24 23:52:27 INFO  com.jason.space_rest_api.Utils - Sendgrid: response code..200
+2015-09-24 23:53:29 INFO  com.jason.space_rest_api.CustomerManagerResource - Begin processing customer add request
+2015-09-24 23:53:29 DEBUG com.jason.space_rest_api.Utils - Utils.formatDate: converted 2015-11-01 15:00:00 to: Sun Nov 01 15:00:00 GMT 2015
+2015-09-24 23:53:29 DEBUG com.jason.space_rest_api.Utils - Utils.formatDate: converted 2016-05-01 17:00:00 to: Sun May 01 17:00:00 BST 2016
+2015-09-24 23:53:29 DEBUG com.jason.space_rest_api.CustomerManagerResource - Received Customer:Customer [id:0, name:Jason,organisation:com.jason,startDate:Sun Nov 01 15:00:00 GMT 2015,endDate:Sun May 01 17:00:00 BST 2016,numOfPeople:12,catering:true]
+2015-09-24 23:53:29 INFO  com.jason.space_rest_api.hibernate.dao.CustomerDaoImpl - Using default hibernate.cfg.xml properties
+2015-09-24 23:53:29 INFO  com.jason.space_rest_api.Utils - Sendgrid: sending mail...
+2015-09-24 23:53:29 INFO  com.jason.space_rest_api.Utils - Sendgrid: response code..200

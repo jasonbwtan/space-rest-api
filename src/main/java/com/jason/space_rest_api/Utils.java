@@ -22,7 +22,7 @@ public class Utils {
 	static final Logger logger = LogManager.getLogger(Utils.class);
 
 	public static Date formatDate(String date) throws ParseException {
-		String[] acceptedFormats = {"dd/MM/yyyy","dd/MM/yyyy HH:mm","dd-MM-yyyy HH:mm:ss"};
+		String[] acceptedFormats = {"dd/MM/yyyy","dd/MM/yyyy HH:mm","yyyy-MM-dd HH:mm:ss"};
 		Date obj = DateUtils.parseDate(date,acceptedFormats);
 		logger.debug("Utils.formatDate: converted "+date+" to: "+obj);
 		return obj;

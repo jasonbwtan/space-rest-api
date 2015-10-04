@@ -190,6 +190,7 @@ public class CustomerManagerResource {
 			Customer customer = new Customer(name, email, phone, organisation,
 					startDate, endDate, numberOfPeople, catering,
 					additionalComments);
+			logger.debug("Received Customer:"+customer);
 			dao.persist(customer);
 			Utils.sendMail(customer);
 		} catch (ParseException e) {

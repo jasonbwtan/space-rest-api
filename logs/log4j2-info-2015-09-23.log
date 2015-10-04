@@ -1,0 +1,14 @@
+22:53:42 INFO  CustomerManagerResource:addUser(187): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+22:53:43 INFO  CustomerDaoImpl:getSessionFactory(77): Using default hibernate.cfg.xml properties
+22:56:07 INFO  CustomerManagerResource:addUser(187): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+22:56:07 INFO  CustomerDaoImpl:getSessionFactory(77): Using default hibernate.cfg.xml properties
+22:58:37 INFO  CustomerManagerResource:addUser(187): Received POST Request with params:[name:Jason,organisation:com.jason,date:2015/05/01 15:00,numberOfPeople:2015/05/01 17:00,catering:12,overtime:1
+22:58:37 INFO  CustomerDaoImpl:getSessionFactory(77): Using default hibernate.cfg.xml properties
+23:04:07 INFO  CustomerManagerResource:addUser(187): Received POST Request, but could not parse dateString:2015/05/01 15:00
+23:04:07 INFO  CustomerDaoImpl:getSessionFactory(77): Using default hibernate.cfg.xml properties
+23:05:57 INFO  CustomerManagerResource:addUser(187): Received POST Request, but could not parse dateString:2015/05/01 15:00
+23:05:57 INFO  CustomerDaoImpl:getSessionFactory(77): Using default hibernate.cfg.xml properties
+23:07:15 INFO  CustomerManagerResource:addUser(187): Received POST Request, but could not parse dateString:2015/05/01 15:00
+23:07:15 INFO  CustomerDaoImpl:getSessionFactory(77): Using default hibernate.cfg.xml properties
+23:12:08 INFO  CustomerManagerResource:addUser(187): Received POST Request, but could not parse dateString:2015/05/01 15:00
+23:12:08 INFO  CustomerDaoImpl:getSessionFactory(77): Using default hibernate.cfg.xml properties
